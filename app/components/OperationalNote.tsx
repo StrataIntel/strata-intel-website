@@ -1,9 +1,12 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { AlertTriangle } from "lucide-react";
 
 export default function OperationalNote() {
+  const t = useTranslations("operational");
+
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 border-t border-zinc-800/50">
       <motion.div
@@ -20,21 +23,16 @@ export default function OperationalNote() {
           />
           <div>
             <h3 className="font-semibold text-zinc-100 text-sm mb-3">
-              Operational Note: Developed for formal industrial deployment.
+              {t("title")}
             </h3>
             <p className="text-sm text-zinc-400 leading-relaxed mb-3">
-              StrataIntel is being structured as a technical-industrial service
-              model subject to applicable aviation, importation, operational, and
-              data-related requirements.
+              {t("description")}
             </p>
             <p className="text-sm text-zinc-400 leading-relaxed">
               <span className="font-semibold text-zinc-200">
-                Important distinction:
+                {t("importantLabel")}
               </span>{" "}
-              The service is not recreational drone operation, audiovisual
-              production, public surveillance, or security monitoring. It is
-              industrial field-data acquisition for infrastructure and
-              operational planning.
+              {t("importantBody")}
             </p>
           </div>
         </div>

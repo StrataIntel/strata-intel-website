@@ -1,19 +1,51 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useEffect, useState, useTransition } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 
-const links = [
-  { label: "Magnetometry", href: "#flagship" },
-  { label: "Use Cases", href: "#use-cases" },
-  { label: "Data Custody", href: "#data-custody" },
-  { label: "Capabilities", href: "#capabilities" },
-  { label: "Contact", href: "#contact" },
+const sectionAnchors = [
+  "#flagship",
+  "#use-cases",
+  "#data-custody",
+  "#capabilities",
+  "#contact",
 ];
 
 export default function Nav() {
+  const t = useTranslations("nav");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [isPending, startTransition] = useTransition();
+
+  const labels = t.raw("links") as string[];
+  const links = labels.map((label, index) => ({
+    label,
+    href: sectionAnchors[index],
+  }));
+
+  function switchLocale(nextLocale: (typeof routing.locales)[number]) {
+    if (nextLocale === locale) {
+      return;
+    }
+
+    const hash = typeof window === "undefined" ? "" : window.location.hash;
+
+    startTransition(() => {
+      router.replace(`${pathname}${hash}`, {
+        locale: nextLocale,
+        scroll: false,
+      });
+    });
+
+    setOpen(false);
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -30,10 +62,20 @@ export default function Nav() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <a href="/" className="text-zinc-100 font-bold text-lg tracking-tight">
-          StrataIntel
-        </a>
+        <Link
+          href="/"
+          className="flex items-center"
+          aria-label="Strata Intel home"
+        >
+          <Image
+            src="/strata-intel-logo-v2-final.png"
+            alt="Strata Intel"
+            width={640}
+            height={144}
+            priority
+            className="h-7 w-auto md:h-8"
+          />
+        </Link>
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8">
@@ -50,11 +92,35 @@ export default function Nav() {
         </ul>
 
         {/* Right side */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4" aria-label={t("languageSelector")}>
           <span className="text-xs text-zinc-500 font-mono tracking-widest">
-            <button className="hover:text-amber-400 transition-colors text-zinc-400">EN</button>
+            <button
+              type="button"
+              onClick={() => switchLocale("en")}
+              disabled={isPending}
+              aria-pressed={locale === "en"}
+              className={`transition-colors ${
+                locale === "en"
+                  ? "text-amber-400"
+                  : "text-zinc-400 hover:text-amber-400"
+              }`}
+            >
+              EN
+            </button>
             <span className="mx-1 text-zinc-700">|</span>
-            <button className="hover:text-amber-400 transition-colors text-zinc-400">ES</button>
+            <button
+              type="button"
+              onClick={() => switchLocale("es")}
+              disabled={isPending}
+              aria-pressed={locale === "es"}
+              className={`transition-colors ${
+                locale === "es"
+                  ? "text-amber-400"
+                  : "text-zinc-400 hover:text-amber-400"
+              }`}
+            >
+              ES
+            </button>
           </span>
         </div>
 
@@ -62,7 +128,7 @@ export default function Nav() {
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden p-2 text-zinc-400 hover:text-zinc-100 transition-colors"
-          aria-label="Toggle menu"
+          aria-label={t("toggleMenu")}
         >
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -84,10 +150,37 @@ export default function Nav() {
               </li>
             ))}
             <li className="pt-2 border-t border-zinc-800">
-              <span className="text-xs text-zinc-500 font-mono tracking-widest">
-                <button className="text-zinc-400 hover:text-amber-400 transition-colors">EN</button>
+              <span
+                className="text-xs text-zinc-500 font-mono tracking-widest"
+                aria-label={t("languageSelector")}
+              >
+                <button
+                  type="button"
+                  onClick={() => switchLocale("en")}
+                  disabled={isPending}
+                  aria-pressed={locale === "en"}
+                  className={`transition-colors ${
+                    locale === "en"
+                      ? "text-amber-400"
+                      : "text-zinc-400 hover:text-amber-400"
+                  }`}
+                >
+                  EN
+                </button>
                 <span className="mx-1 text-zinc-700">|</span>
-                <button className="text-zinc-400 hover:text-amber-400 transition-colors">ES</button>
+                <button
+                  type="button"
+                  onClick={() => switchLocale("es")}
+                  disabled={isPending}
+                  aria-pressed={locale === "es"}
+                  className={`transition-colors ${
+                    locale === "es"
+                      ? "text-amber-400"
+                      : "text-zinc-400 hover:text-amber-400"
+                  }`}
+                >
+                  ES
+                </button>
               </span>
             </li>
           </ul>

@@ -1,44 +1,28 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Radar, Layers, Wind, Thermometer, Camera, FolderKanban } from "lucide-react";
 
-const capabilities = [
-  {
-    Icon: Radar,
-    title: "Aerial Magnetometry",
-    body: "Detection of buried metallic infrastructure, abandoned assets, ferrous debris, and magnetic anomaly zones.",
-  },
-  {
-    Icon: Layers,
-    title: "LiDAR Surface Modeling",
-    body: "High-resolution elevation and surface modeling for infrastructure planning, terrain analysis, drainage context, and digital field representation.",
-  },
-  {
-    Icon: Wind,
-    title: "Methane Gas Detection",
-    body: "Aerial sensing support for identifying potential methane emission zones and strengthening environmental monitoring programs.",
-  },
-  {
-    Icon: Thermometer,
-    title: "Thermal Inspection",
-    body: "Thermal imaging for selected industrial inspection use cases, including heat anomalies, equipment monitoring, and asset condition review.",
-  },
-  {
-    Icon: Camera,
-    title: "High-Resolution Photogrammetry",
-    body: "Visual mapping and orthomosaic generation for site documentation, planning, and field reference.",
-  },
-  {
-    Icon: FolderKanban,
-    title: "Field Data Workflow",
-    body: "Project-to-deliverable structure for storing, tracking, processing, and delivering technical outputs.",
-  },
+const capabilityIcons = [
+  Radar,
+  Layers,
+  Wind,
+  Thermometer,
+  Camera,
+  FolderKanban,
 ];
 
 export default function PackagedCapabilities() {
+  const t = useTranslations("capabilities");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const capabilities = (t.raw("items") as Array<{ title: string; body: string }>).map(
+    (item, index) => ({
+      ...item,
+      Icon: capabilityIcons[index],
+    })
+  );
 
   return (
     <section
@@ -53,16 +37,13 @@ export default function PackagedCapabilities() {
         className="mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 tracking-tight mb-3">
-          Packaged Capabilities
+          {t("title")}
         </h2>
         <p className="text-zinc-500 text-sm md:text-base mb-4">
-          Packaged field intelligence, built around the mission.
+          {t("subtitle")}
         </p>
         <p className="text-zinc-400 leading-relaxed max-w-2xl text-sm md:text-base">
-          Aerial magnetometry is the flagship capability, but many field
-          decisions require more than one data layer. Depending on project needs,
-          StrataIntel may combine magnetometry with additional sensing and
-          field-data acquisition methods to support broader operational planning.
+          {t("description")}
         </p>
       </motion.div>
 

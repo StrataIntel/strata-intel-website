@@ -1,9 +1,8 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Database, Users, Activity, Tag, PackageCheck } from "lucide-react";
-
-const steps = ["Project", "Mission", "Raw Data", "Processing", "Deliverables"];
 
 const features = [
   {
@@ -39,6 +38,10 @@ const features = [
 ];
 
 export default function DataCustody() {
+  const t = useTranslations("dataCustody");
+  const steps = t.raw("steps") as string[];
+  const featureContent = t.raw("features") as Array<{ title: string; body: string }>;
+
   return (
     <section id="data-custody" className="max-w-7xl mx-auto px-6 py-24 border-t border-zinc-800/50">
       <motion.div
@@ -49,16 +52,13 @@ export default function DataCustody() {
         className="mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 tracking-tight mb-3">
-          Data Custody
+          {t("title")}
         </h2>
         <p className="text-zinc-500 text-sm md:text-base mb-4">
-          Field data requires structure, custody, and control.
+          {t("subtitle")}
         </p>
         <p className="text-zinc-400 leading-relaxed max-w-2xl text-sm md:text-base">
-          Industrial field data is sensitive. StrataIntel is being designed
-          around a structured internal data workflow that controls how project
-          information moves from field acquisition to processing and final
-          delivery.
+          {t("description")}
         </p>
       </motion.div>
 
@@ -105,21 +105,21 @@ export default function DataCustody() {
 
       {/* 2-column feature list */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {features.map((f, i) => (
+        {features.map((feature, i) => (
           <motion.div
-            key={f.title}
+            key={featureContent[i].title}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.45, delay: i * 0.07 }}
             className="flex items-start gap-4 p-5 rounded-sm border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition-colors duration-200"
           >
-            <f.Icon size={16} className="text-amber-400 mt-0.5 shrink-0" />
+            <feature.Icon size={16} className="text-amber-400 mt-0.5 shrink-0" />
             <div>
               <h4 className="font-semibold text-zinc-200 text-sm mb-1">
-                {f.title}
+                {featureContent[i].title}
               </h4>
-              <p className="text-xs text-zinc-500 leading-relaxed">{f.body}</p>
+              <p className="text-xs text-zinc-500 leading-relaxed">{featureContent[i].body}</p>
             </div>
           </motion.div>
         ))}

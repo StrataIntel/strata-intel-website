@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "title": "StrataIntel — Industrial Field Intelligence",
+    "description": "StrataIntel helps oil and gas operators and service companies reduce field uncertainty before excavation, construction, maintenance, inspection, or operational intervention."
+  },
+  "nav": {
+    "links": ["Magnetometry", "Use Cases", "Data Custody", "Capabilities", "Contact"],
+    "toggleMenu": "Toggle menu",
+    "languageSelector": "Select language"
+  },
+  "hero": {
+    "eyebrow": "Industrial Field Intelligence",
+    "title": "Field intelligence for safer oilfield operations.",
+    "description": "StrataIntel helps oil and gas operators and service companies reduce field uncertainty before excavation, construction, maintenance, inspection, or operational intervention.",
+    "primaryCta": "Request a Technical Conversation",
+    "secondaryCta": "Explore Aerial Magnetometry"
+  },
+  "dashboard": {
+    "steps": ["Project", "Mission", "Raw Data", "Processing", "Deliverables"],
+    "missionLayer": "Mission Layer",
+    "review": "Magnetic Anomaly Review",
+    "live": "LIVE",
+    "placeholder": "Placeholder for future dashboard, map, field data, or anomaly visualization.",
+    "platform": "StrataIntel · Field Data Platform",
+    "processing": "Processing",
+    "anomalies": "Anomalies"
+  },
+  "problem": {
+    "eyebrow": "The Problem",
+    "title": "Oilfield operations often depend on incomplete field information.",
+    "description": "Mature oilfields carry decades of operational history. Buried pipelines, abandoned metallic infrastructure, undocumented crossings, casing remnants, and out-of-service assets may remain underground long after original records become outdated or incomplete.",
+    "items": [
+      "Accidental damage to buried pipelines or metallic infrastructure",
+      "Delays caused by unexpected underground obstructions",
+      "Increased environmental and safety exposure",
+      "Cost overruns from incomplete field documentation",
+      "Higher risk during well pad expansion, trenching, or civil works",
+      "Poor visibility before contractor mobilization"
+    ]
+  },
+  "flagship": {
+    "title": "Flagship Capability: Aerial Magnetometry for Buried Infrastructure Detection",
+    "description": "Aerial magnetometry uses a high-sensitivity magnetometer mounted on an industrial drone platform to measure variations in the Earth's magnetic field. These variations can reveal the presence of buried ferromagnetic objects such as pipelines, metallic debris, abandoned infrastructure, casing remnants, and other undocumented subsurface assets.",
+    "detectTitle": "What it helps detect",
+    "outputTitle": "Typical outputs",
+    "outputNote": "The exact deliverable format depends on project scope, sensor configuration, processing requirements, and client needs. Final output formats should be defined during the technical scoping phase.",
+    "detects": [
+      "Buried pipelines and metallic line segments",
+      "Abandoned or undocumented infrastructure",
+      "Ferrous debris and metallic obstructions",
+      "Casing remnants and well-related metallic assets",
+      "Potential conflict zones before excavation or construction"
+    ],
+    "outputs": [
+      "Magnetic anomaly maps",
+      "Risk or priority zones for further review",
+      "Field intervention support maps",
+      "Technical survey summaries or reports",
+      "GIS-compatible data layers, when required"
+    ]
+  },
+  "useCases": {
+    "title": "Use Cases",
+    "subtitle": "Built for high-consequence field decisions.",
+    "cases": [
+      {
+        "n": "01",
+        "title": "Pre-Excavation Risk Assessment",
+        "body": "Identify buried metallic infrastructure and anomaly zones before trenching, excavation, or civil works begin."
+      },
+      {
+        "n": "02",
+        "title": "Well Pad Expansion Planning",
+        "body": "Support planning around existing pads, buried flowlines, undocumented crossings, and mature field infrastructure."
+      },
+      {
+        "n": "03",
+        "title": "Pipeline and Flowline Route Verification",
+        "body": "Validate suspected buried line paths and detect potential deviations from historical drawings or incomplete records."
+      },
+      {
+        "n": "04",
+        "title": "Abandoned Infrastructure Detection",
+        "body": "Locate metallic remnants from previous operations that may affect new construction, maintenance, or rehabilitation work."
+      },
+      {
+        "n": "05",
+        "title": "Contractor Pre-Mobilization Intelligence",
+        "body": "Give contractors better field visibility before committing equipment, labor, and execution schedules."
+      },
+      {
+        "n": "06",
+        "title": "Environmental and Operational Risk Reduction",
+        "body": "Reduce the probability of accidental contact with buried assets that could create spills, downtime, or safety incidents."
+      }
+    ]
+  },
+  "environment": {
+    "title": "Operating Environment",
+    "subtitle": "Designed for mature and complex oilfield environments.",
+    "description": "StrataIntel is being developed for oilfield environments where operational history, buried infrastructure, and incomplete documentation create uncertainty before field intervention.",
+    "cards": [
+      {
+        "title": "Mature Fields",
+        "body": "Decades of buried infrastructure and historical operational layers."
+      },
+      {
+        "title": "Heavy-Crude Operations",
+        "body": "Complex surface and subsurface layouts requiring better field visibility."
+      },
+      {
+        "title": "Well Pads and Flowlines",
+        "body": "Field layouts with buried corridors, crossings, and service infrastructure."
+      },
+      {
+        "title": "Rehabilitation Zones",
+        "body": "Areas where historical records do not fully match current field reality."
+      }
+    ]
+  },
+  "dataCustody": {
+    "title": "Data Custody",
+    "subtitle": "Field data requires structure, custody, and control.",
+    "description": "Industrial field data is sensitive. StrataIntel is being designed around a structured internal data workflow that controls how project information moves from field acquisition to processing and final delivery.",
+    "steps": ["Project", "Mission", "Raw Data", "Processing", "Deliverables"],
+    "features": [
+      {
+        "title": "Structured Records",
+        "body": "Project, mission, and data records organized from the start."
+      },
+      {
+        "title": "Controlled Storage",
+        "body": "Raw and processed data handled through defined custody workflows."
+      },
+      {
+        "title": "Access Management",
+        "body": "Role-based access, processing handoffs, and deliverable version control."
+      },
+      {
+        "title": "Audit Trails",
+        "body": "Workflow events and data access activity can be tracked for internal control."
+      },
+      {
+        "title": "Ownership Rules",
+        "body": "Project-specific data ownership and retention logic can be defined."
+      },
+      {
+        "title": "Professional Delivery",
+        "body": "Final outputs organized for planning, review, and contractor coordination."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Packaged Capabilities",
+    "subtitle": "Packaged field intelligence, built around the mission.",
+    "description": "Aerial magnetometry is the flagship capability, but many field decisions require more than one data layer. Depending on project needs, StrataIntel may combine magnetometry with additional sensing and field-data acquisition methods to support broader operational planning.",
+    "items": [
+      {
+        "title": "Aerial Magnetometry",
+        "body": "Detection of buried metallic infrastructure, abandoned assets, ferrous debris, and magnetic anomaly zones."
+      },
+      {
+        "title": "LiDAR Surface Modeling",
+        "body": "High-resolution elevation and surface modeling for infrastructure planning, terrain analysis, drainage context, and digital field representation."
+      },
+      {
+        "title": "Methane Gas Detection",
+        "body": "Aerial sensing support for identifying potential methane emission zones and strengthening environmental monitoring programs."
+      },
+      {
+        "title": "Thermal Inspection",
+        "body": "Thermal imaging for selected industrial inspection use cases, including heat anomalies, equipment monitoring, and asset condition review."
+      },
+      {
+        "title": "High-Resolution Photogrammetry",
+        "body": "Visual mapping and orthomosaic generation for site documentation, planning, and field reference."
+      },
+      {
+        "title": "Field Data Workflow",
+        "body": "Project-to-deliverable structure for storing, tracking, processing, and delivering technical outputs."
+      }
+    ]
+  },
+  "operational": {
+    "title": "Operational Note: Developed for formal industrial deployment.",
+    "description": "StrataIntel is being structured as a technical-industrial service model subject to applicable aviation, importation, operational, and data-related requirements.",
+    "importantLabel": "Important distinction:",
+    "importantBody": "The service is not recreational drone operation, audiovisual production, public surveillance, or security monitoring. It is industrial field-data acquisition for infrastructure and operational planning."
+  },
+  "footer": {
+    "title": "Have a field area with operational uncertainty?",
+    "description": "If your team is planning excavation, construction, maintenance, field rehabilitation, well pad expansion, inspection, or contractor mobilization in a complex oilfield environment, StrataIntel can help evaluate whether aerial magnetometry or a packaged field intelligence solution is the right approach.",
+    "primaryCta": "Request a Technical Conversation",
+    "secondaryCta": "Send a Pilot Area for Review",
+    "copyright": "© 2026 StrataIntel. All rights reserved.",
+    "tagline": "Industrial Field Intelligence · Aerial Magnetometry · Data Custody"
+  }
+}

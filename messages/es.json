@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "title": "StrataIntel — Inteligencia Industrial de Campo",
+    "description": "StrataIntel ayuda a operadores y empresas de servicios de petróleo y gas a reducir la incertidumbre en campo antes de excavaciones, construcción, mantenimiento, inspección o intervención operativa."
+  },
+  "nav": {
+    "links": ["Magnetometría", "Casos de Uso", "Custodia de Datos", "Capacidades", "Contacto"],
+    "toggleMenu": "Abrir o cerrar menú",
+    "languageSelector": "Seleccionar idioma"
+  },
+  "hero": {
+    "eyebrow": "Inteligencia Industrial de Campo",
+    "title": "Inteligencia de campo para operaciones petroleras más seguras.",
+    "description": "StrataIntel ayuda a operadores y empresas de servicios de petróleo y gas a reducir la incertidumbre en campo antes de excavaciones, construcción, mantenimiento, inspección o intervención operativa.",
+    "primaryCta": "Solicitar una conversación técnica",
+    "secondaryCta": "Explorar magnetometría aérea"
+  },
+  "dashboard": {
+    "steps": ["Proyecto", "Misión", "Datos Crudos", "Procesamiento", "Entregables"],
+    "missionLayer": "Capa de misión",
+    "review": "Revisión de anomalías magnéticas",
+    "live": "EN VIVO",
+    "placeholder": "Espacio reservado para un futuro dashboard, mapa, datos de campo o visualización de anomalías.",
+    "platform": "StrataIntel · Plataforma de datos de campo",
+    "processing": "Procesamiento",
+    "anomalies": "Anomalías"
+  },
+  "problem": {
+    "eyebrow": "El problema",
+    "title": "Las operaciones petroleras a menudo dependen de información de campo incompleta.",
+    "description": "Los campos maduros acumulan décadas de historia operativa. Tuberías enterradas, infraestructura metálica abandonada, cruces no documentados, remanentes de casing y activos fuera de servicio pueden permanecer bajo tierra mucho después de que los registros originales se vuelvan obsoletos o incompletos.",
+    "items": [
+      "Daños accidentales a tuberías enterradas o infraestructura metálica",
+      "Retrasos causados por obstrucciones subterráneas inesperadas",
+      "Mayor exposición ambiental y de seguridad",
+      "Sobrecostos por documentación de campo incompleta",
+      "Mayor riesgo durante ampliaciones de pads, zanjeo u obras civiles",
+      "Poca visibilidad antes de la movilización de contratistas"
+    ]
+  },
+  "flagship": {
+    "title": "Capacidad insignia: magnetometría aérea para detección de infraestructura enterrada",
+    "description": "La magnetometría aérea utiliza un magnetómetro de alta sensibilidad montado en una plataforma industrial de dron para medir variaciones en el campo magnético de la Tierra. Estas variaciones pueden revelar la presencia de objetos ferromagnéticos enterrados, como tuberías, chatarra metálica, infraestructura abandonada, remanentes de casing y otros activos subterráneos no documentados.",
+    "detectTitle": "Qué ayuda a detectar",
+    "outputTitle": "Entregables típicos",
+    "outputNote": "El formato exacto del entregable depende del alcance del proyecto, la configuración del sensor, los requisitos de procesamiento y las necesidades del cliente. Los formatos finales deben definirse durante la fase de alcance técnico.",
+    "detects": [
+      "Tuberías enterradas y tramos metálicos de líneas",
+      "Infraestructura abandonada o no documentada",
+      "Escombros ferrosos y obstrucciones metálicas",
+      "Remanentes de casing y activos metálicos relacionados con pozos",
+      "Zonas de posible conflicto antes de excavación o construcción"
+    ],
+    "outputs": [
+      "Mapas de anomalías magnéticas",
+      "Zonas de riesgo o prioridad para revisión adicional",
+      "Mapas de apoyo para intervención en campo",
+      "Resúmenes o informes técnicos del levantamiento",
+      "Capas de datos compatibles con GIS, cuando se requiera"
+    ]
+  },
+  "useCases": {
+    "title": "Casos de uso",
+    "subtitle": "Diseñado para decisiones de campo de alta consecuencia.",
+    "cases": [
+      {
+        "n": "01",
+        "title": "Evaluación de riesgo previa a la excavación",
+        "body": "Identifique infraestructura metálica enterrada y zonas de anomalía antes de iniciar zanjeo, excavación u obras civiles."
+      },
+      {
+        "n": "02",
+        "title": "Planificación de expansión de pads",
+        "body": "Apoye la planificación alrededor de pads existentes, flowlines enterradas, cruces no documentados e infraestructura de campos maduros."
+      },
+      {
+        "n": "03",
+        "title": "Verificación de rutas de tuberías y flowlines",
+        "body": "Valide trayectorias sospechadas de líneas enterradas y detecte posibles desviaciones frente a planos históricos o registros incompletos."
+      },
+      {
+        "n": "04",
+        "title": "Detección de infraestructura abandonada",
+        "body": "Ubique remanentes metálicos de operaciones anteriores que puedan afectar nuevas construcciones, mantenimiento o rehabilitación."
+      },
+      {
+        "n": "05",
+        "title": "Inteligencia previa a movilización de contratistas",
+        "body": "Brinde a los contratistas mejor visibilidad del campo antes de comprometer equipos, personal y cronogramas de ejecución."
+      },
+      {
+        "n": "06",
+        "title": "Reducción del riesgo ambiental y operativo",
+        "body": "Reduzca la probabilidad de contacto accidental con activos enterrados que puedan generar derrames, tiempos muertos o incidentes de seguridad."
+      }
+    ]
+  },
+  "environment": {
+    "title": "Entorno operativo",
+    "subtitle": "Diseñado para entornos petroleros maduros y complejos.",
+    "description": "StrataIntel se está desarrollando para entornos petroleros donde la historia operativa, la infraestructura enterrada y la documentación incompleta generan incertidumbre antes de una intervención en campo.",
+    "cards": [
+      {
+        "title": "Campos maduros",
+        "body": "Décadas de infraestructura enterrada y capas históricas de operación."
+      },
+      {
+        "title": "Operaciones de crudo pesado",
+        "body": "Diseños complejos de superficie y subsuelo que requieren mejor visibilidad del campo."
+      },
+      {
+        "title": "Pads y flowlines",
+        "body": "Disposiciones de campo con corredores enterrados, cruces e infraestructura de servicio."
+      },
+      {
+        "title": "Zonas de rehabilitación",
+        "body": "Áreas donde los registros históricos no coinciden por completo con la realidad actual del campo."
+      }
+    ]
+  },
+  "dataCustody": {
+    "title": "Custodia de datos",
+    "subtitle": "Los datos de campo requieren estructura, custodia y control.",
+    "description": "Los datos industriales de campo son sensibles. StrataIntel se está diseñando alrededor de un flujo interno estructurado que controla cómo la información del proyecto se mueve desde la adquisición en campo hasta el procesamiento y la entrega final.",
+    "steps": ["Proyecto", "Misión", "Datos Crudos", "Procesamiento", "Entregables"],
+    "features": [
+      {
+        "title": "Registros estructurados",
+        "body": "Registros de proyecto, misión y datos organizados desde el inicio."
+      },
+      {
+        "title": "Almacenamiento controlado",
+        "body": "Los datos crudos y procesados se manejan mediante flujos definidos de custodia."
+      },
+      {
+        "title": "Gestión de accesos",
+        "body": "Acceso por roles, transferencias de procesamiento y control de versiones de entregables."
+      },
+      {
+        "title": "Trazabilidad",
+        "body": "Los eventos del flujo y la actividad de acceso a datos pueden rastrearse para control interno."
+      },
+      {
+        "title": "Reglas de propiedad",
+        "body": "La lógica de propiedad y retención de datos puede definirse por proyecto."
+      },
+      {
+        "title": "Entrega profesional",
+        "body": "Los entregables finales se organizan para planificación, revisión y coordinación con contratistas."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Capacidades integradas",
+    "subtitle": "Inteligencia de campo integrada, construida alrededor de la misión.",
+    "description": "La magnetometría aérea es la capacidad insignia, pero muchas decisiones en campo requieren más de una capa de datos. Según las necesidades del proyecto, StrataIntel puede combinar magnetometría con sensores adicionales y métodos de adquisición de datos para respaldar una planificación operativa más amplia.",
+    "items": [
+      {
+        "title": "Magnetometría aérea",
+        "body": "Detección de infraestructura metálica enterrada, activos abandonados, residuos ferrosos y zonas de anomalía magnética."
+      },
+      {
+        "title": "Modelado superficial con LiDAR",
+        "body": "Modelado topográfico y de superficie de alta resolución para planificación de infraestructura, análisis de terreno, contexto de drenaje y representación digital del campo."
+      },
+      {
+        "title": "Detección de gas metano",
+        "body": "Soporte de sensado aéreo para identificar posibles zonas de emisión de metano y fortalecer programas de monitoreo ambiental."
+      },
+      {
+        "title": "Inspección térmica",
+        "body": "Imágenes térmicas para casos seleccionados de inspección industrial, incluidas anomalías de calor, monitoreo de equipos y revisión del estado de activos."
+      },
+      {
+        "title": "Fotogrametría de alta resolución",
+        "body": "Mapeo visual y generación de ortomosaicos para documentación del sitio, planificación y referencia en campo."
+      },
+      {
+        "title": "Flujo de datos de campo",
+        "body": "Estructura desde el proyecto hasta el entregable para almacenar, rastrear, procesar y entregar resultados técnicos."
+      }
+    ]
+  },
+  "operational": {
+    "title": "Nota operativa: desarrollado para despliegue industrial formal.",
+    "description": "StrataIntel se está estructurando como un modelo de servicio técnico-industrial sujeto a requisitos aplicables de aviación, importación, operación y manejo de datos.",
+    "importantLabel": "Distinción importante:",
+    "importantBody": "El servicio no es operación recreativa de drones, producción audiovisual, vigilancia pública ni monitoreo de seguridad. Es adquisición industrial de datos de campo para infraestructura y planificación operativa."
+  },
+  "footer": {
+    "title": "¿Tiene un área de campo con incertidumbre operativa?",
+    "description": "Si su equipo está planificando excavación, construcción, mantenimiento, rehabilitación de campo, expansión de pads, inspección o movilización de contratistas en un entorno petrolero complejo, StrataIntel puede ayudar a evaluar si la magnetometría aérea o una solución integrada de inteligencia de campo es el enfoque adecuado.",
+    "primaryCta": "Solicitar una conversación técnica",
+    "secondaryCta": "Enviar un área piloto para revisión",
+    "copyright": "© 2026 StrataIntel. Todos los derechos reservados.",
+    "tagline": "Inteligencia Industrial de Campo · Magnetometría Aérea · Custodia de Datos"
+  }
+}

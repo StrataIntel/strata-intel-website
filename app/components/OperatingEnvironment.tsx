@@ -1,27 +1,12 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
-const cards = [
-  {
-    title: "Mature Fields",
-    body: "Decades of buried infrastructure and historical operational layers.",
-  },
-  {
-    title: "Heavy-Crude Operations",
-    body: "Complex surface and subsurface layouts requiring better field visibility.",
-  },
-  {
-    title: "Well Pads & Flowlines",
-    body: "Field layouts with buried corridors, crossings, and service infrastructure.",
-  },
-  {
-    title: "Rehabilitation Zones",
-    body: "Areas where historical records do not fully match current field reality.",
-  },
-];
-
 export default function OperatingEnvironment() {
+  const t = useTranslations("environment");
+  const cards = t.raw("cards") as Array<{ title: string; body: string }>;
+
   return (
     <section className="bg-zinc-900/60 border-y border-zinc-800">
       <div className="max-w-7xl mx-auto px-6 py-24">
@@ -33,15 +18,13 @@ export default function OperatingEnvironment() {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 tracking-tight mb-3">
-            Operating Environment
+            {t("title")}
           </h2>
           <p className="text-zinc-500 text-sm md:text-base mb-4">
-            Designed for mature and complex oilfield environments.
+            {t("subtitle")}
           </p>
           <p className="text-zinc-400 leading-relaxed max-w-2xl text-sm md:text-base">
-            StrataIntel is being developed for oilfield environments where
-            operational history, buried infrastructure, and incomplete
-            documentation create uncertainty before field intervention.
+            {t("description")}
           </p>
         </motion.div>
 

@@ -1,18 +1,13 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { AlertTriangle } from "lucide-react";
 
-const problems = [
-  "Accidental damage to buried pipelines or metallic infrastructure",
-  "Delays caused by unexpected underground obstructions",
-  "Increased environmental and safety exposure",
-  "Cost overruns from incomplete field documentation",
-  "Higher risk during well pad expansion, trenching, or civil works",
-  "Poor visibility before contractor mobilization",
-];
-
 export default function TheProblem() {
+  const t = useTranslations("problem");
+  const problems = t.raw("items") as string[];
+
   return (
     <section className="max-w-7xl mx-auto px-6 py-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -25,17 +20,13 @@ export default function TheProblem() {
             transition={{ duration: 0.6 }}
           >
             <p className="font-mono text-xs tracking-[0.25em] uppercase text-amber-400 mb-4">
-              The Problem
+              {t("eyebrow")}
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 leading-tight tracking-tight mb-6">
-              Oilfield operations often depend on incomplete field information.
+              {t("title")}
             </h2>
             <p className="text-zinc-400 leading-relaxed text-sm md:text-base">
-              Mature oilfields carry decades of operational history. Buried
-              pipelines, abandoned metallic infrastructure, undocumented
-              crossings, casing remnants, and out-of-service assets may remain
-              underground long after original records become outdated or
-              incomplete.
+              {t("description")}
             </p>
           </motion.div>
         </div>

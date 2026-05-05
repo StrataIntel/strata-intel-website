@@ -1,9 +1,12 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
 export default function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 pt-16">
       {/* Subtle background grid */}
@@ -26,7 +29,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="font-mono text-xs tracking-[0.25em] uppercase text-amber-400 mb-6"
         >
-          Industrial Field Intelligence
+          {t("eyebrow")}
         </motion.p>
 
         {/* H1 */}
@@ -36,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 0.55, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-100 leading-[1.1] tracking-tight mb-6"
         >
-          Field intelligence for safer oilfield operations.
+          {t("title")}
         </motion.h1>
 
         {/* Subheadline */}
@@ -46,9 +49,7 @@ export default function Hero() {
           transition={{ duration: 0.55, delay: 0.2 }}
           className="text-base sm:text-lg text-zinc-400 leading-relaxed max-w-2xl mx-auto mb-10"
         >
-          StrataIntel helps oil &amp; gas operators and service companies reduce
-          field uncertainty before excavation, construction, maintenance,
-          inspection, or operational intervention.
+          {t("description")}
         </motion.p>
 
         {/* CTAs */}
@@ -62,14 +63,14 @@ export default function Hero() {
             href="#contact"
             className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold text-sm px-6 py-3 rounded-sm transition-colors duration-200"
           >
-            Request a Technical Conversation
+            {t("primaryCta")}
             <ArrowRight size={15} />
           </a>
           <a
             href="#flagship"
             className="inline-flex items-center gap-2 border border-zinc-700 hover:border-amber-400 text-zinc-300 hover:text-amber-400 font-semibold text-sm px-6 py-3 rounded-sm transition-all duration-200"
           >
-            Explore Aerial Magnetometry
+            {t("secondaryCta")}
           </a>
         </motion.div>
       </div>

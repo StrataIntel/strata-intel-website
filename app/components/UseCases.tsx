@@ -1,39 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-
-const cases = [
-  {
-    n: "01",
-    title: "Pre-Excavation Risk Assessment",
-    body: "Identify buried metallic infrastructure and anomaly zones before trenching, excavation, or civil works begin.",
-  },
-  {
-    n: "02",
-    title: "Well Pad Expansion Planning",
-    body: "Support planning around existing pads, buried flowlines, undocumented crossings, and mature field infrastructure.",
-  },
-  {
-    n: "03",
-    title: "Pipeline & Flowline Route Verification",
-    body: "Validate suspected buried line paths and detect potential deviations from historical drawings or incomplete records.",
-  },
-  {
-    n: "04",
-    title: "Abandoned Infrastructure Detection",
-    body: "Locate metallic remnants from previous operations that may affect new construction, maintenance, or rehabilitation work.",
-  },
-  {
-    n: "05",
-    title: "Contractor Pre-Mobilization Intelligence",
-    body: "Give contractors better field visibility before committing equipment, labor, and execution schedules.",
-  },
-  {
-    n: "06",
-    title: "Environmental & Operational Risk Reduction",
-    body: "Reduce the probability of accidental contact with buried assets that could create spills, downtime, or safety incidents.",
-  },
-];
 
 const containerVariants = {
   hidden: {},
@@ -46,6 +14,13 @@ const cardVariants = {
 };
 
 export default function UseCases() {
+  const t = useTranslations("useCases");
+  const cases = t.raw("cases") as Array<{
+    n: string;
+    title: string;
+    body: string;
+  }>;
+
   return (
     <section id="use-cases" className="max-w-7xl mx-auto px-6 py-24 border-t border-zinc-800/50">
       <motion.div
@@ -56,10 +31,10 @@ export default function UseCases() {
         className="mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 tracking-tight mb-3">
-          Use Cases
+          {t("title")}
         </h2>
         <p className="text-zinc-500 text-sm md:text-base">
-          Built for high-consequence field decisions.
+          {t("subtitle")}
         </p>
       </motion.div>
 
