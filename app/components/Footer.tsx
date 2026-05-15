@@ -73,7 +73,7 @@ export default function Footer() {
             </p>
             <a 
               href="mailto:info@strataintel.net"
-              className="text-[10px] text-zinc-700/60 hover:text-amber-400/60 font-mono transition-colors duration-200"
+              className="text-xs text-zinc-500 hover:text-amber-400 font-mono transition-colors duration-200"
             >
               info@strataintel.net
             </a>
