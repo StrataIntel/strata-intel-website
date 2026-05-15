@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Menu, X } from "lucide-react";
+import { Globe, Menu, X } from "lucide-react";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -137,53 +137,57 @@ export default function Nav() {
       {/* Mobile drawer */}
       {open && (
         <div className="md:hidden bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800">
-          <ul className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
-            {links.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="block text-zinc-300 hover:text-zinc-100 text-sm py-1 transition-colors"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-            <li className="pt-2 border-t border-zinc-800">
-              <span
-                className="text-xs text-zinc-500 font-mono tracking-widest"
-                aria-label={t("languageSelector")}
-              >
-                <button
-                  type="button"
-                  onClick={() => switchLocale("en")}
-                  disabled={isPending}
-                  aria-pressed={locale === "en"}
-                  className={`transition-colors ${
-                    locale === "en"
-                      ? "text-amber-400"
-                      : "text-zinc-400 hover:text-amber-400"
-                  }`}
-                >
-                  EN
-                </button>
-                <span className="mx-1 text-zinc-700">|</span>
-                <button
-                  type="button"
-                  onClick={() => switchLocale("es")}
-                  disabled={isPending}
-                  aria-pressed={locale === "es"}
-                  className={`transition-colors ${
-                    locale === "es"
-                      ? "text-amber-400"
-                      : "text-zinc-400 hover:text-amber-400"
-                  }`}
-                >
-                  ES
-                </button>
-              </span>
-            </li>
-          </ul>
+          <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
+            {/* Language selector - subtle at top */}
+            <div className="pb-3 border-b border-zinc-800/50">
+              <div className="flex items-center gap-2">
+                <Globe size={14} className="text-zinc-500" />
+                <div className="flex gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => switchLocale("en")}
+                    disabled={isPending}
+                    aria-pressed={locale === "en"}
+                    className={`py-1.5 px-3 rounded text-xs font-medium transition-colors ${
+                      locale === "en"
+                        ? "bg-amber-400/10 text-amber-400"
+                        : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50"
+                    }`}
+                  >
+                    English
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => switchLocale("es")}
+                    disabled={isPending}
+                    aria-pressed={locale === "es"}
+                    className={`py-1.5 px-3 rounded text-xs font-medium transition-colors ${
+                      locale === "es"
+                        ? "bg-amber-400/10 text-amber-400"
+                        : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50"
+                    }`}
+                  >
+                    Español
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation links */}
+            <ul className="flex flex-col gap-4">
+              {links.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="block text-zinc-300 hover:text-zinc-100 text-sm py-1 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
     </header>
