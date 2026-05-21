@@ -9,14 +9,13 @@ import {
 } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const SLIDE_IMAGES = [
-  "/carousel/Project_Carrousel.png",
-  "/carousel/Mission_Carrousel.png",
-  "/carousel/Raw_Data_Carrousel.png",
-  "/carousel/Processing_Carrousel.png",
-  "/carousel/Deliverables_Carrousel.png",
+  "/carousel/Project_Carrousel.webp",
+  "/carousel/Mission_Carrousel.webp",
+  "/carousel/Raw_Data_Carrousel.webp",
+  "/carousel/Processing_Carrousel.webp",
+  "/carousel/Deliverables_Carrousel.webp",
 ] as const;
 
 const IMAGE_WIDTH = 1672;
@@ -33,9 +32,9 @@ type WorkflowSlide = {
 export default function WorkflowCarousel() {
   const t = useTranslations("workflowCarousel");
   const slides = t.raw("slides") as WorkflowSlide[];
-  const prefersReducedMotion = useReducedMotion();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const regionRef = useRef<HTMLElement>(null);
 
   const slideCount = slides.length;
@@ -49,6 +48,14 @@ export default function WorkflowCarousel() {
 
   const goNext = useCallback(() => goTo(activeIndex + 1), [activeIndex, goTo]);
   const goPrev = useCallback(() => goTo(activeIndex - 1), [activeIndex, goTo]);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setPrefersReducedMotion(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     if (prefersReducedMotion || isPaused) return;
@@ -75,9 +82,9 @@ export default function WorkflowCarousel() {
   return (
     <section
       ref={regionRef}
-      className="max-w-7xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24"
+      className="max-w-7xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24 reveal-on-scroll"
       aria-roledescription="carousel"
-      aria-label="Field data workflow"
+      aria-label={t("sectionTitle")}
       onKeyDown={handleKeyDown}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
@@ -89,14 +96,9 @@ export default function WorkflowCarousel() {
       }}
       tabIndex={0}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 32 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.6 }}
-        className="flex flex-col items-center"
-      >
-        {/* Step pills — centered, wrap on mobile */}
+      <h2 className="sr-only">{t("sectionTitle")}</h2>
+
+      <div className="flex flex-col items-center">
         <div
           className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mb-5 sm:mb-6 w-full max-w-3xl"
           role="tablist"
@@ -122,27 +124,21 @@ export default function WorkflowCarousel() {
           ))}
         </div>
 
-        {/* Title + description — after tabs, before image */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeIndex}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: prefersReducedMotion ? 0 : 0.3 }}
-            className="text-center max-w-xl sm:max-w-2xl mx-auto mb-6 sm:mb-8 px-1"
-            aria-live="polite"
-          >
-            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-zinc-100 tracking-tight mb-2 sm:mb-3">
-              {activeSlide.title}
-            </h3>
-            <p className="text-xs sm:text-sm md:text-base text-zinc-400 leading-relaxed">
-              {activeSlide.description}
-            </p>
-          </motion.div>
-        </AnimatePresence>
+        <div
+          key={activeIndex}
+          className={`text-center max-w-xl sm:max-w-2xl mx-auto mb-6 sm:mb-8 px-1 ${
+            prefersReducedMotion ? "" : "carousel-caption-enter"
+          }`}
+          aria-live="polite"
+        >
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-zinc-100 tracking-tight mb-2 sm:mb-3">
+            {activeSlide.title}
+          </h3>
+          <p className="text-xs sm:text-sm md:text-base text-zinc-400 leading-relaxed">
+            {activeSlide.description}
+          </p>
+        </div>
 
-        {/* Image — slightly smaller, centered */}
         <div
           className="w-full max-w-4xl lg:max-w-5xl mx-auto"
           id={`workflow-panel-${activeIndex}`}
@@ -151,31 +147,22 @@ export default function WorkflowCarousel() {
         >
           <div className="relative rounded-sm border border-zinc-800 bg-zinc-900 overflow-hidden shadow-lg shadow-black/20">
             <div className="relative w-full aspect-1672/941">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeIndex}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: prefersReducedMotion ? 0 : 0.35 }}
-                  className="absolute inset-0"
-                >
-                  <Image
-                    src={SLIDE_IMAGES[activeIndex]}
-                    alt={activeSlide.imageAlt}
-                    width={IMAGE_WIDTH}
-                    height={IMAGE_HEIGHT}
-                    className="w-full h-full object-cover object-top"
-                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 85vw, 1024px"
-                    priority={activeIndex === 0}
-                  />
-                </motion.div>
-              </AnimatePresence>
+              <Image
+                key={activeIndex}
+                src={SLIDE_IMAGES[activeIndex]}
+                alt={activeSlide.imageAlt}
+                width={IMAGE_WIDTH}
+                height={IMAGE_HEIGHT}
+                className={`w-full h-full object-cover object-top ${
+                  prefersReducedMotion ? "" : "carousel-slide-enter"
+                }`}
+                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 85vw, 1024px"
+                priority={activeIndex === 0}
+              />
             </div>
           </div>
         </div>
 
-        {/* Dot indicators */}
         <div className="flex items-center justify-center gap-2 mt-4 sm:mt-5">
           {slides.map((slide, i) => (
             <button
@@ -192,7 +179,7 @@ export default function WorkflowCarousel() {
             />
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

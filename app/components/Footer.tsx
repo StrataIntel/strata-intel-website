@@ -1,27 +1,18 @@
-"use client";
-
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { getTranslations } from "next-intl/server";
 import { ArrowRight } from "lucide-react";
 
-export default function Footer() {
-  const t = useTranslations("footer");
+export default async function Footer() {
+  const t = await getTranslations("footer");
 
   return (
     <>
-      {/* Bottom CTA */}
       <section
         id="contact"
         className="border-t border-zinc-800 bg-zinc-900/40"
       >
         <div className="max-w-4xl mx-auto px-6 py-32 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="reveal-on-scroll">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100 tracking-tight leading-tight mb-6">
               {t("title")}
             </h2>
@@ -43,16 +34,15 @@ export default function Footer() {
                 {t("secondaryCta")}
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Footer bar */}
       <footer className="border-t border-zinc-800 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3 rounded-full border border-zinc-800 bg-zinc-900/70 px-3 py-2 shadow-[0_0_40px_rgba(245,158,11,0.08)]">
             <Image
-              src="/strata-intel-icon-v1-final.png"
+              src="/strata-intel-icon-v1-final.webp"
               alt="Strata Intel icon"
               width={96}
               height={96}
@@ -71,7 +61,7 @@ export default function Footer() {
             <p className="text-xs text-zinc-300 font-mono text-center sm:text-right">
               {t("tagline")}
             </p>
-            <a 
+            <a
               href="mailto:info@strataintel.net"
               className="text-xs text-zinc-200 hover:text-amber-400 font-mono transition-colors duration-200"
             >

@@ -68,11 +68,10 @@ export default function Nav() {
           aria-label="Strata Intel home"
         >
           <Image
-            src="/strata-intel-logo-v2-final.png"
+            src="/strata-intel-logo-v2-final.webp"
             alt="Strata Intel"
             width={640}
             height={144}
-            priority
             className="h-7 w-auto md:h-8"
           />
         </Link>

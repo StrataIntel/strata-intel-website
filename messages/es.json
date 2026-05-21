@@ -26,6 +26,7 @@
     "anomalies": "Anomalías"
   },
   "workflowCarousel": {
+    "sectionTitle": "Flujo de datos de campo",
     "prevSlide": "Fase anterior",
     "nextSlide": "Fase siguiente",
     "goToSlide": "Ir a {step}",

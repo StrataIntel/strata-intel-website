@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import Nav from "@/app/components/Nav";
 import Hero from "@/app/components/Hero";
 import WorkflowCarousel from "@/app/components/WorkflowCarousel";
@@ -10,7 +11,14 @@ import PackagedCapabilities from "@/app/components/PackagedCapabilities";
 import OperationalNote from "@/app/components/OperationalNote";
 import Footer from "@/app/components/Footer";
 
-export default function Home() {
+type PageProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function Home({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <main className="bg-zinc-950 min-h-screen">
       <Nav />

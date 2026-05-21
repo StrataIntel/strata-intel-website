@@ -26,6 +26,7 @@
     "anomalies": "Anomalies"
   },
   "workflowCarousel": {
+    "sectionTitle": "Field data workflow",
     "prevSlide": "Previous phase",
     "nextSlide": "Next phase",
     "goToSlide": "Go to {step}",
