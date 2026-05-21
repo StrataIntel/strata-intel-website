@@ -25,6 +25,43 @@
     "processing": "Processing",
     "anomalies": "Anomalies"
   },
+  "workflowCarousel": {
+    "prevSlide": "Previous phase",
+    "nextSlide": "Next phase",
+    "goToSlide": "Go to {step}",
+    "slides": [
+      {
+        "step": "Project",
+        "title": "Project Setup",
+        "description": "We define the area of interest, operational context, access requirements, and risk hypothesis before any field acquisition begins.",
+        "imageAlt": "Project setup dashboard showing area of interest, service scope, risk context, and access status"
+      },
+      {
+        "step": "Mission",
+        "title": "Mission Planning",
+        "description": "Survey coverage, flight paths, sensor configuration, and field-execution parameters are structured around the project objective.",
+        "imageAlt": "Mission planning dashboard with flight paths, sensor configuration, and coverage metrics"
+      },
+      {
+        "step": "Raw Data",
+        "title": "Raw Data Custody",
+        "description": "Field data is registered, organized, and stored in structured batches linked to the project and mission.",
+        "imageAlt": "Raw data custody dashboard with batch manifest, verification, and chain of custody"
+      },
+      {
+        "step": "Processing",
+        "title": "Technical Processing",
+        "description": "Raw sensor data is reviewed and transformed into interpretable layers such as anomaly zones, suspected buried assets, and priority areas.",
+        "imageAlt": "Technical processing dashboard with magnetic anomaly map and priority zones"
+      },
+      {
+        "step": "Deliverables",
+        "title": "Operational Deliverables",
+        "description": "Final outputs are packaged for planning, intervention review, contractor coordination, and internal decision-making.",
+        "imageAlt": "Operational deliverables dashboard with field intervention map and delivery packages"
+      }
+    ]
+  },
   "problem": {
     "eyebrow": "The Problem",
     "title": "Oilfield operations often depend on incomplete field information.",

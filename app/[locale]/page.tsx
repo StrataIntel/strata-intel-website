@@ -1,6 +1,6 @@
 import Nav from "@/app/components/Nav";
 import Hero from "@/app/components/Hero";
-import DashboardMockup from "@/app/components/DashboardMockup";
+import WorkflowCarousel from "@/app/components/WorkflowCarousel";
 import TheProblem from "@/app/components/TheProblem";
 import FlagshipCapability from "@/app/components/FlagshipCapability";
 import UseCases from "@/app/components/UseCases";
@@ -15,7 +15,7 @@ export default function Home() {
     <main className="bg-zinc-950 min-h-screen">
       <Nav />
       <Hero />
-      <DashboardMockup />
+      <WorkflowCarousel />
       <TheProblem />
       <FlagshipCapability />
       <UseCases />

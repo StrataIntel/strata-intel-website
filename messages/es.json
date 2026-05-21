@@ -25,6 +25,43 @@
     "processing": "Procesamiento",
     "anomalies": "Anomalías"
   },
+  "workflowCarousel": {
+    "prevSlide": "Fase anterior",
+    "nextSlide": "Fase siguiente",
+    "goToSlide": "Ir a {step}",
+    "slides": [
+      {
+        "step": "Proyecto",
+        "title": "Configuración del Proyecto",
+        "description": "Definimos el área de interés, contexto operativo, requerimientos de acceso e hipótesis de riesgo antes de iniciar cualquier adquisición de data en campo.",
+        "imageAlt": "Dashboard de configuración del proyecto con área de interés, alcance de servicio, contexto de riesgo y estado de acceso"
+      },
+      {
+        "step": "Misión",
+        "title": "Planificación de Misión",
+        "description": "La cobertura del levantamiento, rutas de vuelo, configuración de sensores y parámetros de ejecución se estructuran alrededor del objetivo del proyecto.",
+        "imageAlt": "Dashboard de planificación de misión con rutas de vuelo, configuración de sensores y métricas de cobertura"
+      },
+      {
+        "step": "Data Cruda",
+        "title": "Custodia de Data Cruda",
+        "description": "La data de campo se registra, organiza y almacena en lotes estructurados vinculados al proyecto y a la misión.",
+        "imageAlt": "Dashboard de custodia de data cruda con manifiesto de lote, verificación y cadena de custodia"
+      },
+      {
+        "step": "Procesamiento",
+        "title": "Procesamiento Técnico",
+        "description": "La data cruda del sensor se revisa y transforma en capas interpretables como zonas de anomalía, posibles activos enterrados y áreas prioritarias.",
+        "imageAlt": "Dashboard de procesamiento técnico con mapa de anomalías magnéticas y zonas prioritarias"
+      },
+      {
+        "step": "Entregables",
+        "title": "Entregables Operacionales",
+        "description": "Los outputs finales se empaquetan para planificación, revisión de intervención, coordinación con contratistas y toma de decisiones internas.",
+        "imageAlt": "Dashboard de entregables operacionales con mapa de intervención en campo y paquetes de entrega"
+      }
+    ]
+  },
   "problem": {
     "eyebrow": "El problema",
     "title": "Las operaciones petroleras a menudo dependen de información de campo incompleta.",
