@@ -52,7 +52,7 @@ export default function UseCases() {
             whileHover={{ y: -4, transition: { duration: 0.2 } }}
             className="group p-6 rounded-sm border border-zinc-800 bg-zinc-900/40 hover:border-amber-400/40 hover:bg-zinc-900/70 transition-colors duration-200 cursor-default"
           >
-            <span className="font-mono text-3xl font-bold text-zinc-800 group-hover:text-amber-400/30 transition-colors duration-300 block mb-4 leading-none">
+            <span className="font-mono text-3xl font-bold text-amber-400 group-hover:text-amber-300 transition-colors duration-300 block mb-4 leading-none">
               {c.n}
             </span>
             <h3 className="font-semibold text-zinc-100 text-sm mb-2 leading-snug">

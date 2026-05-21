@@ -25,7 +25,7 @@ export default function Footer() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100 tracking-tight leading-tight mb-6">
               {t("title")}
             </h2>
-            <p className="text-zinc-400 leading-relaxed max-w-2xl mx-auto mb-10 text-sm md:text-base">
+            <p className="text-zinc-300 leading-relaxed max-w-2xl mx-auto mb-10 text-sm md:text-base">
               {t("description")}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -59,21 +59,21 @@ export default function Footer() {
               className="h-9 w-9 rounded-full border border-amber-400/20 bg-zinc-950/80 p-1.5"
             />
             <div className="leading-none">
-              <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-amber-400/80">
+              <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-amber-400">
                 Strata Intel
               </p>
-              <p className="mt-1 text-xs text-zinc-600 font-mono">
+              <p className="mt-1 text-xs text-zinc-400 font-mono">
                 {t("copyright")}
               </p>
             </div>
           </div>
           <div className="flex flex-col items-center sm:items-end gap-2">
-            <p className="text-xs text-zinc-700 font-mono text-center sm:text-right">
+            <p className="text-xs text-zinc-300 font-mono text-center sm:text-right">
               {t("tagline")}
             </p>
             <a 
               href="mailto:info@strataintel.net"
-              className="text-xs text-zinc-500 hover:text-amber-400 font-mono transition-colors duration-200"
+              className="text-xs text-zinc-200 hover:text-amber-400 font-mono transition-colors duration-200"
             >
               info@strataintel.net
             </a>
