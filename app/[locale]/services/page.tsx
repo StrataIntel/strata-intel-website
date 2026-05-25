@@ -44,9 +44,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: t("metadata.description"),
       images: [
         {
-          url: "/og-image.png",
-          width: 1200,
-          height: 630,
+          url: "/carousel/Mission_Carrousel.webp",
+          width: 1456,
+          height: 816,
           alt: t("metadata.title"),
         },
       ],
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: "summary_large_image",
       title: t("metadata.title"),
       description: t("metadata.description"),
-      images: ["/og-image.png"],
+      images: ["/carousel/Mission_Carrousel.webp"],
     },
   };
 }
