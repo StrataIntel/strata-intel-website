@@ -9,6 +9,7 @@ import OperatingEnvironment from "@/app/components/OperatingEnvironment";
 import DataCustody from "@/app/components/DataCustody";
 import PackagedCapabilities from "@/app/components/PackagedCapabilities";
 import OperationalNote from "@/app/components/OperationalNote";
+import ServicesTeaser from "@/app/components/ServicesTeaser";
 import Footer from "@/app/components/Footer";
 
 type PageProps = {
@@ -31,6 +32,7 @@ export default async function Home({ params }: PageProps) {
       <DataCustody />
       <PackagedCapabilities />
       <OperationalNote />
+      <ServicesTeaser />
       <Footer />
     </main>
   );

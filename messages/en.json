@@ -5,6 +5,7 @@
   },
   "nav": {
     "links": ["Magnetometry", "Use Cases", "Data Custody", "Capabilities", "Contact"],
+    "servicesLink": "Services",
     "toggleMenu": "Toggle menu",
     "languageSelector": "Select language"
   },
@@ -224,6 +225,30 @@
     "description": "StrataIntel is being structured as a technical-industrial service model subject to applicable aviation, importation, operational, and data-related requirements.",
     "importantLabel": "Important distinction:",
     "importantBody": "The service is not recreational drone operation, audiovisual production, public surveillance, or security monitoring. It is industrial field-data acquisition for infrastructure and operational planning."
+  },
+  "services": {
+    "metadata": {
+      "title": "StrataIntel | Industrial Drone Services",
+      "description": "Download and preview StrataIntel's industrial drone service documentation for field intelligence and aerial magnetometry operations."
+    },
+    "eyebrow": "Service Documentation",
+    "title": "Industrial Drone Services",
+    "description": "Review and download our technical service documentation. Each document covers the scope, capabilities, and operational context of our industrial drone field intelligence services.",
+    "previewButton": "Preview",
+    "downloadButton": "Download PDF",
+    "closeModal": "Close preview",
+    "cards": [
+      {
+        "title": "Industrial Drone Services",
+        "description": "Comprehensive overview of StrataIntel's industrial drone service offerings, including aerial magnetometry, LiDAR surface modeling, methane detection, and packaged field intelligence capabilities."
+      }
+    ],
+    "teaser": {
+      "eyebrow": "Service Documentation",
+      "title": "Download our service documentation.",
+      "description": "Access technical documentation covering our industrial drone capabilities, service scope, and operational context.",
+      "cta": "View Service Documents"
+    }
   },
   "footer": {
     "title": "Have a field area with operational uncertainty?",

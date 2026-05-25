@@ -5,6 +5,7 @@
   },
   "nav": {
     "links": ["Magnetometría", "Casos de Uso", "Custodia de Datos", "Capacidades", "Contacto"],
+    "servicesLink": "Servicios",
     "toggleMenu": "Abrir o cerrar menú",
     "languageSelector": "Seleccionar idioma"
   },
@@ -224,6 +225,30 @@
     "description": "StrataIntel se está estructurando como un modelo de servicio técnico-industrial sujeto a requisitos aplicables de aviación, importación, operación y manejo de datos.",
     "importantLabel": "Distinción importante:",
     "importantBody": "El servicio no es operación recreativa de drones, producción audiovisual, vigilancia pública ni monitoreo de seguridad. Es adquisición industrial de datos de campo para infraestructura y planificación operativa."
+  },
+  "services": {
+    "metadata": {
+      "title": "StrataIntel | Servicios de Drones Industriales",
+      "description": "Descargue y previsualice la documentación de servicios de drones industriales de StrataIntel para inteligencia de campo y operaciones de magnetometría aérea."
+    },
+    "eyebrow": "Documentación de Servicios",
+    "title": "Servicios de Drones Industriales",
+    "description": "Revise y descargue nuestra documentación técnica de servicios. Cada documento cubre el alcance, las capacidades y el contexto operativo de nuestros servicios de inteligencia de campo con drones industriales.",
+    "previewButton": "Vista Previa",
+    "downloadButton": "Descargar PDF",
+    "closeModal": "Cerrar vista previa",
+    "cards": [
+      {
+        "title": "Servicios de Drones Industriales",
+        "description": "Descripción completa de los servicios de drones industriales de StrataIntel, incluyendo magnetometría aérea, modelado de superficie LiDAR, detección de metano y capacidades de inteligencia de campo."
+      }
+    ],
+    "teaser": {
+      "eyebrow": "Documentación de Servicios",
+      "title": "Descargue nuestra documentación de servicios.",
+      "description": "Acceda a documentación técnica sobre nuestras capacidades de drones industriales, alcance de servicios y contexto operativo.",
+      "cta": "Ver Documentos de Servicios"
+    }
   },
   "footer": {
     "title": "¿Tienes un área de campo con incertidumbre operativa?",

@@ -88,6 +88,14 @@ export default function Nav() {
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              href="/services"
+              className="text-sm text-zinc-400 hover:text-zinc-100 transition-colors duration-200"
+            >
+              {t("servicesLink")}
+            </Link>
+          </li>
         </ul>
 
         {/* Right side */}
@@ -185,6 +193,15 @@ export default function Nav() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/services"
+                  onClick={() => setOpen(false)}
+                  className="block text-zinc-300 hover:text-zinc-100 text-sm py-1 transition-colors"
+                >
+                  {t("servicesLink")}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
