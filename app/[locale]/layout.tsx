@@ -63,6 +63,7 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalPath,
       languages: {
+        "x-default": "/",
         en: "/",
         es: "/es",
       },

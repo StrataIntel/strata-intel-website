@@ -6,7 +6,7 @@ import Footer from "@/app/components/Footer";
 import { routing } from "@/i18n/routing";
 
 const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://strataintel.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://strataintel.net";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: canonicalPath,
       languages: {
+        "x-default": "/services",
         en: "/services",
         es: "/es/services",
       },

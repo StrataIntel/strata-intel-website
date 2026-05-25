@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://strataintel.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://strataintel.net";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
       alternates: {
         languages: {
+          "x-default": `${BASE_URL}/`,
           en: `${BASE_URL}/`,
           es: `${BASE_URL}/es`,
         },
@@ -28,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: {
         languages: {
+          "x-default": `${BASE_URL}/`,
           en: `${BASE_URL}/`,
           es: `${BASE_URL}/es`,
         },
@@ -41,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       alternates: {
         languages: {
+          "x-default": `${BASE_URL}/services`,
           en: `${BASE_URL}/services`,
           es: `${BASE_URL}/es/services`,
         },
@@ -54,6 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       alternates: {
         languages: {
+          "x-default": `${BASE_URL}/services`,
           en: `${BASE_URL}/services`,
           es: `${BASE_URL}/es/services`,
         },
