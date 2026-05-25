@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "StrataIntel | Industrial Field Intelligence",
-    "description": "StrataIntel helps oil and gas operators and service companies reduce field uncertainty before excavation, construction, maintenance, inspection, or operational intervention."
+    "description": "StrataIntel helps oil and gas operators and service companies reduce field uncertainty before excavation, construction, maintenance, inspection, or operational intervention.",
+    "keywords": "industrial field intelligence, aerial magnetometry, oilfield operations, drone surveys, underground utilities, pipeline detection, oil and gas, field data, subsurface mapping"
   },
   "nav": {
     "links": ["Magnetometry", "Use Cases", "Data Custody", "Capabilities", "Contact"],
@@ -229,7 +230,8 @@
   "services": {
     "metadata": {
       "title": "StrataIntel | Industrial Drone Services",
-      "description": "Download and preview StrataIntel's industrial drone service documentation for field intelligence and aerial magnetometry operations."
+      "description": "Download and preview StrataIntel's industrial drone service documentation for field intelligence and aerial magnetometry operations.",
+      "keywords": "industrial drone services, aerial magnetometry services, oilfield drone survey, subsurface detection, field data acquisition, pipeline inspection drones, oil and gas drone services"
     },
     "eyebrow": "Service Documentation",
     "title": "Industrial Drone Services",

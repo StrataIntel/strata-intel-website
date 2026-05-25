@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "StrataIntel — Inteligencia Industrial de Campo",
-    "description": "StrataIntel ayuda a operadores y empresas de servicios de petróleo y gas a reducir la incertidumbre en campo antes de excavaciones, construcción, mantenimiento, inspección o intervención operativa."
+    "description": "StrataIntel ayuda a operadores y empresas de servicios de petróleo y gas a reducir la incertidumbre en campo antes de excavaciones, construcción, mantenimiento, inspección o intervención operativa.",
+    "keywords": "inteligencia industrial de campo, magnetometría aérea, operaciones petroleras, levantamientos con drones, servicios subsuperficiales, detección de tuberías, petróleo y gas, datos de campo"
   },
   "nav": {
     "links": ["Magnetometría", "Casos de Uso", "Custodia de Datos", "Capacidades", "Contacto"],
@@ -229,7 +230,8 @@
   "services": {
     "metadata": {
       "title": "StrataIntel | Servicios de Drones Industriales",
-      "description": "Descargue y previsualice la documentación de servicios de drones industriales de StrataIntel para inteligencia de campo y operaciones de magnetometría aérea."
+      "description": "Descargue y previsualice la documentación de servicios de drones industriales de StrataIntel para inteligencia de campo y operaciones de magnetometría aérea.",
+      "keywords": "servicios de drones industriales, magnetometría aérea, levantamiento con drones petroleros, detección subsuperficial, adquisición de datos de campo, inspección de tuberías con drones"
     },
     "eyebrow": "Documentación de Servicios",
     "title": "Servicios de Drones Industriales",

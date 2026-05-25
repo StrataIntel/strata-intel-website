@@ -31,6 +31,9 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://strataintel.net";
+
 export async function generateMetadata({
   params,
 }: Omit<LayoutProps, "children">): Promise<Metadata> {
@@ -39,10 +42,54 @@ export async function generateMetadata({
     ? locale
     : routing.defaultLocale;
   const messages = await getMessages(activeLocale);
+  const isDefault = activeLocale === routing.defaultLocale;
+  const canonicalPath = isDefault ? "/" : `/${activeLocale}`;
 
   return {
-    title: messages.metadata.title,
+    metadataBase: new URL(BASE_URL),
+    title: {
+      default: messages.metadata.title,
+      template: `%s | StrataIntel`,
+    },
     description: messages.metadata.description,
+    keywords: messages.metadata.keywords,
+    authors: [{ name: "StrataIntel" }],
+    creator: "StrataIntel",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true },
+    },
+    alternates: {
+      canonical: canonicalPath,
+      languages: {
+        en: "/",
+        es: "/es",
+      },
+    },
+    openGraph: {
+      type: "website",
+      locale: activeLocale === "es" ? "es_MX" : "en_US",
+      alternateLocale: activeLocale === "es" ? "en_US" : "es_MX",
+      url: `${BASE_URL}${canonicalPath}`,
+      siteName: "StrataIntel",
+      title: messages.metadata.title,
+      description: messages.metadata.description,
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: messages.metadata.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: messages.metadata.title,
+      description: messages.metadata.description,
+      images: ["/og-image.png"],
+    },
   };
 }
 
