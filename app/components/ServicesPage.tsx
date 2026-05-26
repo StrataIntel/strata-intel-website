@@ -64,7 +64,7 @@ export default function ServicesPage() {
                 <button
                   type="button"
                   onClick={() => setOpenIndex(index)}
-                  className="flex items-center justify-center gap-2 border border-zinc-700 hover:border-amber-400 text-zinc-300 hover:text-amber-400 font-semibold text-sm px-5 py-3 sm:py-2.5 rounded-sm transition-colors duration-200"
+                  className="hidden sm:flex items-center justify-center gap-2 border border-zinc-700 hover:border-amber-400 text-zinc-300 hover:text-amber-400 font-semibold text-sm px-5 py-3 sm:py-2.5 rounded-sm transition-colors duration-200"
                 >
                   <Eye size={15} />
                   {t("previewButton")}
@@ -73,7 +73,7 @@ export default function ServicesPage() {
                 <a
                   href={pdf.url}
                   download={pdf.fileName}
-                  className="flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold text-sm px-5 py-3 sm:py-2.5 rounded-sm transition-colors duration-200"
+                  className="flex w-full sm:w-auto items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold text-sm px-5 py-3 sm:py-2.5 rounded-sm transition-colors duration-200"
                 >
                   <Download size={15} />
                   {t("downloadButton")}
