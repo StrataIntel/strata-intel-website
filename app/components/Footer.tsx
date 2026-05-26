@@ -1,44 +1,11 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight } from "lucide-react";
 
 export default async function Footer() {
   const t = await getTranslations("footer");
 
   return (
-    <>
-      <section
-        id="contact"
-        className="border-t border-zinc-800 bg-zinc-900/40"
-      >
-        <div className="max-w-4xl mx-auto px-6 py-32 text-center">
-          <div className="reveal-on-scroll">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100 tracking-tight leading-tight mb-6">
-              {t("title")}
-            </h2>
-            <p className="text-zinc-300 leading-relaxed max-w-2xl mx-auto mb-10 text-sm md:text-base">
-              {t("description")}
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="mailto:contact@strataintel.com"
-                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold text-sm px-6 py-3 rounded-sm transition-colors duration-200"
-              >
-                {t("primaryCta")}
-                <ArrowRight size={15} />
-              </a>
-              <a
-                href="mailto:contact@strataintel.com"
-                className="inline-flex items-center gap-2 border border-zinc-700 hover:border-amber-400 text-zinc-300 hover:text-amber-400 font-semibold text-sm px-6 py-3 rounded-sm transition-all duration-200"
-              >
-                {t("secondaryCta")}
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer className="border-t border-zinc-800 bg-zinc-950">
+    <footer className="border-t border-zinc-800 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3 rounded-full border border-zinc-800 bg-zinc-900/70 px-3 py-2 shadow-[0_0_40px_rgba(245,158,11,0.08)]">
             <Image
@@ -70,6 +37,5 @@ export default async function Footer() {
           </div>
         </div>
       </footer>
-    </>
   );
 }

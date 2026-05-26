@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Inter, Roboto_Mono } from "next/font/google";
+import Script from "next/script";
 import "../globals.css";
 import { routing } from "@/i18n/routing";
 
@@ -111,8 +112,18 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${inter.variable} ${robotoMono.variable} h-full antialiased`}
     >
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://calendar.google.com/calendar/scheduling-button-script.css"
+        />
+      </head>
       <body className="min-h-full bg-zinc-950 text-zinc-100">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <Script
+          src="https://calendar.google.com/calendar/scheduling-button-script.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { CalendarDays, ChevronDown } from "lucide-react";
+import { CALENDAR_URL } from "./BookCallButton";
 
 export default async function Hero() {
   const t = await getTranslations("hero");
@@ -33,11 +34,13 @@ export default async function Hero() {
 
         <div className="hero-enter hero-enter-delay-3 flex w-full max-w-xs flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:items-center sm:justify-center sm:gap-4">
           <a
-            href="#contact"
+            href={CALENDAR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex w-full items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold text-sm px-6 py-3 rounded-sm transition-colors duration-200 sm:w-auto"
           >
             {t("primaryCta")}
-            <ArrowRight size={15} className="shrink-0" />
+            <CalendarDays size={15} className="shrink-0" />
           </a>
           <a
             href="#flagship"

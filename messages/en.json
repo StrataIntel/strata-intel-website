@@ -7,6 +7,7 @@
   "nav": {
     "links": ["Magnetometry", "Use Cases", "Data Custody", "Capabilities", "Contact"],
     "servicesLink": "Services",
+    "bookCallLabel": "Book a Call",
     "toggleMenu": "Toggle menu",
     "languageSelector": "Select language"
   },
@@ -257,7 +258,14 @@
     "description": "If your team is planning excavation, construction, maintenance, field rehabilitation, well pad expansion, inspection, or contractor mobilization in a complex oilfield environment, StrataIntel can help evaluate whether aerial magnetometry or a packaged field intelligence solution is the right approach.",
     "primaryCta": "Request a Technical Conversation",
     "secondaryCta": "Send a Pilot Area for Review",
+    "bookCta": "Book a Call",
     "copyright": "© 2026 StrataIntel. All rights reserved.",
     "tagline": "Industrial Field Intelligence · Aerial Magnetometry · Data Custody"
+  },
+  "bookCall": {
+    "eyebrow": "Schedule",
+    "title": "Ready to talk?",
+    "description": "Book a 30-minute call to discuss your field operations and how StrataIntel can help reduce uncertainty before your next intervention.",
+    "buttonLabel": "Book a Call"
   }
 }

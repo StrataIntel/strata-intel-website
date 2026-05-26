@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { useEffect, useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Globe, Menu, X } from "lucide-react";
+import { CalendarDays, Globe, Menu, X } from "lucide-react";
+import { CALENDAR_URL } from "./BookCallButton";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -99,7 +100,16 @@ export default function Nav() {
         </ul>
 
         {/* Right side */}
-        <div className="hidden md:flex items-center gap-4" aria-label={t("languageSelector")}>
+        <div className="hidden md:flex items-center gap-6" aria-label={t("languageSelector")}>
+          <a
+            href={CALENDAR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold text-xs px-4 py-2 rounded-sm transition-colors duration-200"
+          >
+            {t("bookCallLabel")}
+            <CalendarDays size={13} />
+          </a>
           <span className="text-xs text-zinc-500 font-mono tracking-widest">
             <button
               type="button"
@@ -201,6 +211,18 @@ export default function Nav() {
                 >
                   {t("servicesLink")}
                 </Link>
+              </li>
+              <li className="pt-2">
+                <a
+                  href={CALENDAR_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="inline-flex items-center justify-center gap-2 w-full bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold text-sm py-2.5 px-4 rounded-sm transition-colors duration-200"
+                >
+                  {t("bookCallLabel")}
+                  <CalendarDays size={15} />
+                </a>
               </li>
             </ul>
           </div>

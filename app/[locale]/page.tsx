@@ -10,6 +10,7 @@ import DataCustody from "@/app/components/DataCustody";
 import PackagedCapabilities from "@/app/components/PackagedCapabilities";
 import OperationalNote from "@/app/components/OperationalNote";
 import ServicesTeaser from "@/app/components/ServicesTeaser";
+import BookACall from "@/app/components/BookACall";
 import Footer from "@/app/components/Footer";
 
 type PageProps = {
@@ -33,6 +34,7 @@ export default async function Home({ params }: PageProps) {
       <PackagedCapabilities />
       <OperationalNote />
       <ServicesTeaser />
+      <BookACall />
       <Footer />
     </main>
   );
