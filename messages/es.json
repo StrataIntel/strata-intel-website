@@ -416,7 +416,8 @@
     "eyebrow": "Agenda",
     "title": "¿Listo para hablar?",
     "description": "Agenda una llamada de 30 minutos para hablar sobre tus operaciones de campo y cómo StrataIntel puede ayudarte a reducir la incertidumbre antes de tu próxima intervención.",
-    "buttonLabel": "Agendar una llamada"
+    "buttonLabel": "Agendar una llamada",
+    "orReachUsVia": "o contáctanos vía"
   },
   "technology": {
     "metadata": {

@@ -416,7 +416,8 @@
     "eyebrow": "Schedule",
     "title": "Ready to talk?",
     "description": "Book a 30-minute call to discuss your field operations and how StrataIntel can help reduce uncertainty before your next intervention.",
-    "buttonLabel": "Book a Call"
+    "buttonLabel": "Book a Call",
+    "orReachUsVia": "or reach us via"
   },
   "technology": {
     "metadata": {

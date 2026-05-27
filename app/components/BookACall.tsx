@@ -29,7 +29,7 @@ export default async function BookACall() {
             <CalendarDays size={15} />
           </a>
           <div className="mt-6 flex items-center justify-center gap-2 text-zinc-500">
-            <span className="text-xs">or reach us via</span>
+            <span className="text-xs">{t("orReachUsVia")}</span>
             <a
               href="https://wa.me/584127543948"
               target="_blank"
