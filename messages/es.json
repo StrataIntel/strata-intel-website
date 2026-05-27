@@ -86,6 +86,69 @@
       "description": "Magnetometría aérea para detección de infraestructura enterrada. Identifique tuberías enterradas, residuos metálicos y activos subsuperficiales no documentados antes de excavación o construcción.",
       "keywords": "magnetometría aérea, detección tuberías enterradas, detección subsuperficial, detección anomalías magnéticas, detección ferromagnética, infraestructura enterrada, magnetometría petrolera"
     },
+    "hero": {
+      "eyebrow": "Tecnología Insignia",
+      "title": "Magnetometría Aérea para Infraestructura Enterrada",
+      "description": "Vea qué hay bajo la superficie antes de romper el suelo. Nuestra magnetometría montada en drones detecta tuberías enterradas, escombros metálicos e infraestructura no documentada en entornos petroleros complejos.",
+      "primaryCta": "Cómo Funciona",
+      "secondaryCta": "Ver Detalles Técnicos"
+    },
+    "howItWorksTitle": "Cómo Funciona la Magnetometría Aérea",
+    "howItWorksDescription": "Nuestro sistema mide variaciones sutiles en el campo magnético terrestre causadas por materiales ferromagnéticos subterráneos.",
+    "howItWorksSteps": [
+      {
+        "title": "Sensores de Alta Sensibilidad",
+        "body": "Magnetómetros de grado industrial detectan variaciones del campo magnético con precisión, montados en plataformas de drones estables."
+      },
+      {
+        "title": "Cobertura Sistemática",
+        "body": "Rutas de vuelo planificadas aseguran cobertura completa del área con altitud y espaciado consistentes para recolección confiable de datos."
+      },
+      {
+        "title": "Procesamiento Experto",
+        "body": "Los datos magnéticos crudos se procesan e interpretan en mapas de anomalías accionables que muestran infraestructura enterrada potencial."
+      }
+    ],
+    "whyTitle": "¿Por Qué Magnetometría Aérea?",
+    "whyDescription": "Los levantamientos terrestres tradicionales son lentos y limitados. La magnetometría aérea cubre grandes áreas rápidamente mientras mantiene la precisión.",
+    "advantages": [
+      {
+        "title": "Cobertura Rápida de Área",
+        "body": "Levante grandes áreas de campo en horas en lugar de días. Las plataformas aéreas se mueven más rápido que las cuadrillas terrestres manteniendo la calidad de datos.",
+        "details": [
+          "Cubra más de 50 hectáreas por día dependiendo del terreno y parámetros de misión",
+          "No es necesario acceder a áreas de terreno difíciles o peligrosas"
+        ]
+      },
+      {
+        "title": "Detección No Invasiva",
+        "body": "Identifique infraestructura enterrada sin excavación, perforación o penetración del suelo. Sin interrupción de operaciones activas.",
+        "details": [
+          "Detecte objetos metálicos enterrados a través de suelo, vegetación y capas superficiales",
+          "Seguro para sitios de campo activos y entornos sensibles"
+        ]
+      },
+      {
+        "title": "Mejor Inteligencia Pre-Trabajo",
+        "body": "Brinde a su equipo y contratistas mayor visibilidad del campo antes de que comiencen excavación, construcción o mantenimiento.",
+        "details": [
+          "Reduzca golpes accidentales y retrasos costosos del proyecto",
+          "Mejore la precisión de las ofertas de contratistas con mejor información subsuperficial"
+        ]
+      },
+      {
+        "title": "Experiencia en Campos Maduros",
+        "body": "Diseñado para entornos petroleros complejos donde décadas de operaciones crean capas de infraestructura enterrada.",
+        "details": [
+          "Efectivo donde los registros están incompletos u obsoletos",
+          "Construido para operaciones de crudo pesado y zonas de rehabilitación"
+        ]
+      }
+    ],
+    "ctaTitle": "¿Planificando excavación o construcción?",
+    "ctaDescription": "Hablemos sobre si la magnetometría aérea puede ayudar a reducir la incertidumbre subsuperficial para su próxima intervención en campo.",
+    "ctaPrimary": "Solicitar una Conversación Técnica",
+    "ctaSecondary": "Ver Casos de Uso",
     "title": "Capacidad insignia: magnetometría aérea para detección de infraestructura enterrada",
     "description": "La magnetometría aérea utiliza un magnetómetro de alta sensibilidad montado en una plataforma industrial de dron para medir variaciones en el campo magnético de la Tierra. Estas variaciones pueden revelar la presencia de objetos ferromagnéticos enterrados, como tuberías, chatarra metálica, infraestructura abandonada, remanentes de casing y otros activos subterráneos no documentados.",
     "detectTitle": "Qué ayuda a detectar",
@@ -112,6 +175,35 @@
       "description": "Casos de uso de inteligencia industrial de campo para operaciones de petróleo y gas: evaluación de riesgo pre-excavación, expansión de pads, verificación de tuberías y movilización de contratistas.",
       "keywords": "evaluación pre-excavación, expansión de pads, verificación de tuberías, detección infraestructura abandonada, inteligencia para contratistas, evaluación riesgo de campo"
     },
+    "hero": {
+      "eyebrow": "Aplicaciones Reales",
+      "title": "Donde la Inteligencia de Campo Hace la Diferencia",
+      "description": "Desde evaluación de riesgo pre-excavación hasta movilización de contratistas: vea cómo nuestras capacidades de inteligencia de campo resuelven desafíos operacionales reales en entornos petroleros maduros."
+    },
+    "deepDiveTitle": "Análisis Profundo: Casos de Uso Críticos",
+    "deepDiveDescription": "Comprendiendo cómo la inteligencia de campo reduce el riesgo en operaciones de alta consecuencia.",
+    "whenToUseTitle": "¿Cuándo Tiene Sentido la Magnetometría Aérea?",
+    "whenToUseDescription": "Comprender qué proyectos se benefician más de la inteligencia aérea de campo.",
+    "goodFitTitle": "Buen Ajuste",
+    "goodFit": [
+      "Campos maduros con décadas de infraestructura enterrada",
+      "Proyectos donde los registros están incompletos u obsoletos",
+      "Áreas de excavación o construcción de alto riesgo",
+      "Inteligencia pre-construcción para grandes proyectos de capital",
+      "Expansiones de pads en entornos complejos"
+    ],
+    "notIdealTitle": "Puede No Ser Ideal",
+    "notIdeal": [
+      "Sitios vírgenes sin infraestructura enterrada",
+      "Proyectos donde el subsuelo ya está bien documentado",
+      "Áreas que requieren mapeo de precisión a nivel de centímetros",
+      "Detección de materiales no ferromagnéticos (PVC, concreto)",
+      "Situaciones de respuesta de emergencia inmediata"
+    ],
+    "ctaTitle": "¿Reconoce su caso de uso?",
+    "ctaDescription": "Hablemos sobre si la magnetometría aérea o una solución integrada de inteligencia de campo se ajusta a sus necesidades operacionales.",
+    "ctaPrimary": "Iniciar una Conversación",
+    "ctaSecondary": "Aprender Sobre Magnetometría",
     "title": "Casos de uso",
     "subtitle": "Diseñado para decisiones de campo de alta consecuencia.",
     "cases": [
@@ -176,6 +268,19 @@
       "description": "Flujo estructurado de custodia de datos de campo desde la configuración del proyecto hasta la ejecución de la misión, almacenamiento de datos crudos, procesamiento y entregables operativos.",
       "keywords": "custodia de datos, flujo de datos de campo, seguridad de datos, gestión de datos de proyecto, control de datos de misión, custodia estructurada de datos"
     },
+    "hero": {
+      "eyebrow": "Gestión de Datos",
+      "title": "Custodia de Datos Estructurada para Inteligencia Industrial de Campo",
+      "description": "Los datos industriales de campo son sensibles y críticos para la misión. Nuestro flujo de custodia asegura que los datos de su proyecto estén controlados, organizados y entregados profesionalmente desde la adquisición hasta el producto final."
+    },
+    "securityTitle": "Principios de Seguridad y Control",
+    "securityDescription": "Los datos de campo contienen información operacional y de infraestructura sensible. Nuestro modelo de custodia se construye alrededor de control, confidencialidad y estándares de entrega profesional.",
+    "workflowTitle": "Del Campo a la Entrega Final",
+    "workflowDescription": "Cada etapa de nuestro flujo mantiene la integridad de datos y el contexto del proyecto. Los datos de adquisición de campo fluyen a través de procesamiento controlado y revisión de calidad antes de la entrega profesional.",
+    "ctaTitle": "¿Preguntas sobre custodia de datos?",
+    "ctaDescription": "Podemos discutir nuestro flujo de datos, prácticas de seguridad y estándares de entrega durante una conversación técnica.",
+    "ctaPrimary": "Agendar una Llamada",
+    "ctaSecondary": "Ver Documentación de Servicios",
     "title": "Custodia de datos",
     "subtitle": "Los datos de campo requieren estructura, custodia y control.",
     "description": "Los datos industriales de campo son sensibles. StrataIntel se está diseñando alrededor de un flujo interno estructurado que controla cómo la información del proyecto se mueve desde la adquisición en campo hasta el procesamiento y la entrega final.",
@@ -213,6 +318,25 @@
       "description": "Capacidades integradas de inteligencia de campo: magnetometría aérea, modelado LiDAR, detección de metano, inspección térmica y fotogrametría para operaciones industriales.",
       "keywords": "capacidades inteligencia de campo, magnetometría aérea, modelado LIDAR, detección metano, inspección térmica, fotogrametría industrial, servicios drones integrados"
     },
+    "hero": {
+      "eyebrow": "Soluciones Integradas",
+      "title": "Capacidades Completas de Inteligencia de Campo",
+      "description": "Las decisiones de campo rara vez dependen de un solo tipo de dato. Combinamos magnetometría aérea con métodos de sensado complementarios para brindarle visibilidad operacional completa."
+    },
+    "integratedTitle": "Inteligencia de Campo Integrada",
+    "integratedDescription": "Combine múltiples capas de datos en una sola misión para inteligencia integral pre-construcción o pre-intervención.",
+    "missionFlexibilityTitle": "Una Misión, Múltiples Capas de Datos",
+    "missionFlexibilityDescription": "En lugar de desplegar equipos separados para diferentes levantamientos, podemos capturar múltiples tipos de datos en una sola misión coordinada.",
+    "missionBenefits": [
+      "Tiempo y costos reducidos de movilización en campo",
+      "Recolección de datos consistente en todos los sensores",
+      "Procesamiento coordinado y entregables integrados",
+      "Punto único de contacto para gestión de proyectos"
+    ],
+    "ctaTitle": "¿Necesita más de una capa de datos?",
+    "ctaDescription": "Hablemos sobre cómo combinar capacidades en una solución integrada para los requisitos de su proyecto.",
+    "ctaPrimary": "Discutir su Proyecto",
+    "ctaSecondary": "Descargar Documentación de Servicios",
     "title": "Capacidades integradas",
     "subtitle": "Inteligencia de campo integrada, construida alrededor de la misión.",
     "description": "La magnetometría aérea es la capacidad insignia, pero muchas decisiones en campo requieren más de una capa de datos. Según las necesidades del proyecto, StrataIntel puede combinar magnetometría con sensores adicionales y métodos de adquisición de datos para respaldar una planificación operativa más amplia.",

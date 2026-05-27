@@ -86,6 +86,69 @@
       "description": "Aerial magnetometry for buried infrastructure detection. Identify buried pipelines, metallic debris, and undocumented subsurface assets before excavation or construction.",
       "keywords": "aerial magnetometry, buried pipeline detection, subsurface detection, magnetic anomaly detection, ferromagnetic detection, buried infrastructure, oilfield magnetometry"
     },
+    "hero": {
+      "eyebrow": "Flagship Technology",
+      "title": "Aerial Magnetometry for Buried Infrastructure",
+      "description": "See what's beneath the surface before breaking ground. Our drone-mounted magnetometry detects buried pipelines, metallic debris, and undocumented infrastructure in complex oilfield environments.",
+      "primaryCta": "How It Works",
+      "secondaryCta": "View Technical Details"
+    },
+    "howItWorksTitle": "How Aerial Magnetometry Works",
+    "howItWorksDescription": "Our system measures subtle variations in Earth's magnetic field caused by ferromagnetic materials underground.",
+    "howItWorksSteps": [
+      {
+        "title": "High-Sensitivity Sensors",
+        "body": "Industrial-grade magnetometers detect magnetic field variations with precision, mounted on stable drone platforms."
+      },
+      {
+        "title": "Systematic Coverage",
+        "body": "Planned flight paths ensure complete area coverage with consistent altitude and spacing for reliable data collection."
+      },
+      {
+        "title": "Expert Processing",
+        "body": "Raw magnetic data is processed and interpreted into actionable anomaly maps showing potential buried infrastructure."
+      }
+    ],
+    "whyTitle": "Why Aerial Magnetometry?",
+    "whyDescription": "Traditional ground surveys are slow and limited. Aerial magnetometry covers large areas quickly while maintaining precision.",
+    "advantages": [
+      {
+        "title": "Rapid Area Coverage",
+        "body": "Survey large field areas in hours instead of days. Aerial platforms move faster than ground crews while maintaining data quality.",
+        "details": [
+          "Cover 50+ hectares per day depending on terrain and mission parameters",
+          "No need to access difficult or hazardous ground areas"
+        ]
+      },
+      {
+        "title": "Non-Invasive Detection",
+        "body": "Identify buried infrastructure without excavation, drilling, or ground penetration. No disruption to active operations.",
+        "details": [
+          "Detect buried metallic objects through soil, vegetation, and surface layers",
+          "Safe for active field sites and sensitive environments"
+        ]
+      },
+      {
+        "title": "Better Pre-Work Intelligence",
+        "body": "Give your team and contractors clearer field visibility before excavation, construction, or maintenance begins.",
+        "details": [
+          "Reduce accidental strikes and costly project delays",
+          "Improve contractor bidding accuracy with better subsurface information"
+        ]
+      },
+      {
+        "title": "Mature Field Expertise",
+        "body": "Designed for complex oilfield environments where decades of operations create buried infrastructure layers.",
+        "details": [
+          "Effective where records are incomplete or outdated",
+          "Built for heavy-crude operations and rehabilitation zones"
+        ]
+      }
+    ],
+    "ctaTitle": "Planning excavation or construction?",
+    "ctaDescription": "Let's discuss whether aerial magnetometry can help reduce subsurface uncertainty for your next field intervention.",
+    "ctaPrimary": "Request a Technical Conversation",
+    "ctaSecondary": "View Use Cases",
     "title": "Flagship Capability: Aerial Magnetometry for Buried Infrastructure Detection",
     "description": "Aerial magnetometry uses a high-sensitivity magnetometer mounted on an industrial drone platform to measure variations in the Earth's magnetic field. These variations can reveal the presence of buried ferromagnetic objects such as pipelines, metallic debris, abandoned infrastructure, casing remnants, and other undocumented subsurface assets.",
     "detectTitle": "What it helps detect",
@@ -112,6 +175,35 @@
       "description": "Industrial field intelligence use cases for oil and gas operations: pre-excavation risk assessment, well pad expansion, pipeline verification, and contractor mobilization.",
       "keywords": "pre-excavation assessment, well pad expansion, pipeline verification, abandoned infrastructure detection, contractor intelligence, field risk assessment"
     },
+    "hero": {
+      "eyebrow": "Real Applications",
+      "title": "Where Field Intelligence Makes the Difference",
+      "description": "From pre-excavation risk assessment to contractor mobilization — see how our field intelligence capabilities solve real operational challenges in mature oilfield environments."
+    },
+    "deepDiveTitle": "Deep Dive: Critical Use Cases",
+    "deepDiveDescription": "Understanding how field intelligence reduces risk in high-consequence operations.",
+    "whenToUseTitle": "When Does Aerial Magnetometry Make Sense?",
+    "whenToUseDescription": "Understanding which projects benefit most from aerial field intelligence.",
+    "goodFitTitle": "Good Fit",
+    "goodFit": [
+      "Mature fields with decades of buried infrastructure",
+      "Projects where records are incomplete or outdated",
+      "High-risk excavation or construction areas",
+      "Pre-construction intelligence for large capital projects",
+      "Well pad expansions in complex environments"
+    ],
+    "notIdealTitle": "May Not Be Ideal",
+    "notIdeal": [
+      "Greenfield sites with no buried infrastructure",
+      "Projects where subsurface is already well-documented",
+      "Areas requiring centimeter-level precision mapping",
+      "Detection of non-ferromagnetic materials (PVC, concrete)",
+      "Immediate emergency response situations"
+    ],
+    "ctaTitle": "Recognize your use case?",
+    "ctaDescription": "Let's discuss whether aerial magnetometry or a packaged field intelligence solution fits your operational needs.",
+    "ctaPrimary": "Start a Conversation",
+    "ctaSecondary": "Learn About Magnetometry",
     "title": "Use Cases",
     "subtitle": "Built for high-consequence field decisions.",
     "cases": [
@@ -176,6 +268,19 @@
       "description": "Structured field data custody workflow from project setup through mission execution, raw data storage, processing, and operational deliverables.",
       "keywords": "data custody, field data workflow, data security, project data management, mission data control, structured data custody"
     },
+    "hero": {
+      "eyebrow": "Data Management",
+      "title": "Structured Data Custody for Industrial Field Intelligence",
+      "description": "Industrial field data is sensitive and mission-critical. Our custody workflow ensures your project data is controlled, organized, and professionally delivered from acquisition through final output."
+    },
+    "securityTitle": "Security & Control Principles",
+    "securityDescription": "Field data contains sensitive operational and infrastructure information. Our custody model is built around control, confidentiality, and professional delivery standards.",
+    "workflowTitle": "From Field to Final Delivery",
+    "workflowDescription": "Each stage of our workflow maintains data integrity and project context. Field acquisition data flows through controlled processing and quality review before professional delivery.",
+    "ctaTitle": "Questions about data custody?",
+    "ctaDescription": "We can discuss our data workflow, security practices, and delivery standards during a technical conversation.",
+    "ctaPrimary": "Schedule a Call",
+    "ctaSecondary": "View Service Documentation",
     "title": "Data Custody",
     "subtitle": "Field data requires structure, custody, and control.",
     "description": "Industrial field data is sensitive. StrataIntel is being designed around a structured internal data workflow that controls how project information moves from field acquisition to processing and final delivery.",
@@ -213,6 +318,25 @@
       "description": "Packaged field intelligence capabilities: aerial magnetometry, LiDAR surface modeling, methane detection, thermal inspection, and photogrammetry for industrial operations.",
       "keywords": "field intelligence capabilities, aerial magnetometry, LIDAR modeling, methane detection, thermal inspection, industrial photogrammetry, packaged drone services"
     },
+    "hero": {
+      "eyebrow": "Packaged Solutions",
+      "title": "Complete Field Intelligence Capabilities",
+      "description": "Field decisions rarely depend on a single data type. We combine aerial magnetometry with complementary sensing methods to give you complete operational visibility."
+    },
+    "integratedTitle": "Integrated Field Intelligence",
+    "integratedDescription": "Combine multiple data layers into a single mission for comprehensive pre-construction or pre-intervention intelligence.",
+    "missionFlexibilityTitle": "One Mission, Multiple Data Layers",
+    "missionFlexibilityDescription": "Instead of deploying separate teams for different surveys, we can capture multiple data types in a single coordinated mission.",
+    "missionBenefits": [
+      "Reduced field mobilization time and costs",
+      "Consistent data collection across all sensors",
+      "Coordinated processing and integrated deliverables",
+      "Single point of contact for project management"
+    ],
+    "ctaTitle": "Need more than one data layer?",
+    "ctaDescription": "Let's discuss how to combine capabilities into a single packaged solution for your project requirements.",
+    "ctaPrimary": "Discuss Your Project",
+    "ctaSecondary": "Download Service Documentation",
     "title": "Packaged Capabilities",
     "subtitle": "Packaged field intelligence, built around the mission.",
     "description": "Aerial magnetometry is the flagship capability, but many field decisions require more than one data layer. Depending on project needs, StrataIntel may combine magnetometry with additional sensing and field-data acquisition methods to support broader operational planning.",
