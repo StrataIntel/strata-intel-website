@@ -7,6 +7,7 @@
   "nav": {
     "links": ["Magnetometría", "Casos de Uso", "Custodia de Datos", "Capacidades", "Contacto"],
     "servicesLink": "Servicios",
+    "technologyLink": "Tecnología",
     "bookCallLabel": "Agendar una llamada",
     "toggleMenu": "Abrir o cerrar menú",
     "languageSelector": "Seleccionar idioma"
@@ -267,5 +268,76 @@
     "title": "¿Listo para hablar?",
     "description": "Agenda una llamada de 30 minutos para hablar sobre tus operaciones de campo y cómo StrataIntel puede ayudarte a reducir la incertidumbre antes de tu próxima intervención.",
     "buttonLabel": "Agendar una llamada"
+  },
+  "technology": {
+    "metadata": {
+      "title": "StrataIntel | Tecnología y Equipos",
+      "description": "Plataformas de drones industriales reales, cargas útiles de sensores y sistemas de software que impulsan las capacidades de inteligencia de campo de StrataIntel.",
+      "keywords": "equipos de drones industriales, carga magnetómetro, drone LIDAR, sensor RGB, drone híbrido gas, tecnología inteligencia de campo"
+    },
+    "eyebrow": "Equipos Reales",
+    "title": "Tecnología que respalda nuestras capacidades de inteligencia de campo.",
+    "description": "StrataIntel opera plataformas de drones de grado industrial, cargas útiles de sensores y sistemas de software diseñados para entornos petroleros exigentes.",
+    "platformsTitle": "Plataformas Aéreas",
+    "payloadsTitle": "Cargas de Sensores",
+    "softwareTitle": "Sistemas de Software",
+    "images": [
+      {
+        "src": "/real-images/Industrial Drone _ Gas hybrid.webp",
+        "alt": "Plataforma de dron industrial híbrido de gas para operaciones de vuelo extendido",
+        "caption": "Dron Industrial Híbrido de Gas",
+        "description": "Plataforma de tiempo de vuelo extendido para levantamientos magnetométricos de gran área",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/Industrial Drone _ RBG setup.webp",
+        "alt": "Dron industrial con configuración de carga útil de cámara RGB",
+        "caption": "Configuración de Sensor RGB",
+        "description": "Plataforma industrial configurada para captura de datos visuales de alta resolución",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/Industrial drone hybrid _ mag payload.webp",
+        "alt": "Dron industrial híbrido con carga útil de magnetómetro montado",
+        "caption": "Integración de Plataforma con Magnetómetro",
+        "description": "Dron híbrido de gas con carga útil de magnetómetro para detección subsuperficial",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/Industrial drone motor.webp",
+        "alt": "Ensamble de motor sin escobillas para dron industrial",
+        "caption": "Ensamble de Motor Industrial",
+        "description": "Sistema de propulsión de servicio pesado para operaciones con carga útil",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/LIDAR Drone.webp",
+        "alt": "Dron industrial equipado con sensor LIDAR para mapeo de terreno",
+        "caption": "Plataforma Equipada con LIDAR",
+        "description": "Dron industrial configurado para modelado de superficie de alta precisión",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/Magnetometer payload.webp",
+        "alt": "Carga útil de sensor magnetómetro para detección de anomalías subsuperficiales",
+        "caption": "Carga Útil de Sensor Magnetómetro",
+        "description": "Magnetómetro de alta sensibilidad para detectar anomalías ferrosas subsuperficiales",
+        "category": "payloads"
+      },
+      {
+        "src": "/real-images/RGB PAYLOAD.webp",
+        "alt": "Carga útil de cámara RGB para documentación visual de alta resolución",
+        "caption": "Carga Útil de Cámara RGB",
+        "description": "Sistema de cámara de alta resolución para documentación e inspección de superficie",
+        "category": "payloads"
+      },
+      {
+        "src": "/real-images/software screenshot.webp",
+        "alt": "Interfaz de software de procesamiento y análisis de datos de campo de StrataIntel",
+        "caption": "Software de Procesamiento de Datos de Campo",
+        "description": "Software propietario para procesar, analizar y entregar datos de inteligencia de campo",
+        "category": "software"
+      }
+    ]
   }
 }

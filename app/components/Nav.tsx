@@ -97,6 +97,14 @@ export default function Nav() {
               {t("servicesLink")}
             </Link>
           </li>
+          <li>
+            <Link
+              href="/technology"
+              className="text-sm text-zinc-400 hover:text-zinc-100 transition-colors duration-200"
+            >
+              {t("technologyLink")}
+            </Link>
+          </li>
         </ul>
 
         {/* Right side */}
@@ -210,6 +218,15 @@ export default function Nav() {
                   className="block text-zinc-300 hover:text-zinc-100 text-sm py-1 transition-colors"
                 >
                   {t("servicesLink")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/technology"
+                  onClick={() => setOpen(false)}
+                  className="block text-zinc-300 hover:text-zinc-100 text-sm py-1 transition-colors"
+                >
+                  {t("technologyLink")}
                 </Link>
               </li>
               <li className="pt-2">

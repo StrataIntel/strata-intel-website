@@ -7,6 +7,7 @@
   "nav": {
     "links": ["Magnetometry", "Use Cases", "Data Custody", "Capabilities", "Contact"],
     "servicesLink": "Services",
+    "technologyLink": "Technology",
     "bookCallLabel": "Book a Call",
     "toggleMenu": "Toggle menu",
     "languageSelector": "Select language"
@@ -267,5 +268,76 @@
     "title": "Ready to talk?",
     "description": "Book a 30-minute call to discuss your field operations and how StrataIntel can help reduce uncertainty before your next intervention.",
     "buttonLabel": "Book a Call"
+  },
+  "technology": {
+    "metadata": {
+      "title": "StrataIntel | Technology & Equipment",
+      "description": "Real industrial drone platforms, sensor payloads, and software systems that power StrataIntel's field intelligence capabilities.",
+      "keywords": "industrial drone equipment, magnetometer payload, LIDAR drone, RGB sensor, gas hybrid drone, field intelligence technology"
+    },
+    "eyebrow": "Real Equipment",
+    "title": "Technology backing our field intelligence claims.",
+    "description": "StrataIntel operates real industrial-grade drone platforms, sensor payloads, and software systems designed for demanding oilfield environments.",
+    "platformsTitle": "Aerial Platforms",
+    "payloadsTitle": "Sensor Payloads",
+    "softwareTitle": "Software Systems",
+    "images": [
+      {
+        "src": "/real-images/Industrial Drone _ Gas hybrid.webp",
+        "alt": "Industrial gas-hybrid drone platform for extended flight operations",
+        "caption": "Gas-Hybrid Industrial Drone",
+        "description": "Extended flight time platform for large-area magnetometry surveys",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/Industrial Drone _ RBG setup.webp",
+        "alt": "Industrial drone with RGB camera payload configuration",
+        "caption": "RGB Sensor Configuration",
+        "description": "Industrial platform configured for high-resolution visual data capture",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/Industrial drone hybrid _ mag payload.webp",
+        "alt": "Hybrid industrial drone with magnetometer payload mounted",
+        "caption": "Magnetometer Platform Integration",
+        "description": "Gas-hybrid drone with magnetometer payload for subsurface detection",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/Industrial drone motor.webp",
+        "alt": "Industrial drone brushless motor assembly",
+        "caption": "Industrial Motor Assembly",
+        "description": "Heavy-duty propulsion system for payload-carrying operations",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/LIDAR Drone.webp",
+        "alt": "Industrial drone equipped with LIDAR sensor for terrain mapping",
+        "caption": "LIDAR-Equipped Platform",
+        "description": "Industrial drone configured for high-precision surface modeling",
+        "category": "platforms"
+      },
+      {
+        "src": "/real-images/Magnetometer payload.webp",
+        "alt": "Magnetometer sensor payload for subsurface anomaly detection",
+        "caption": "Magnetometer Sensor Payload",
+        "description": "High-sensitivity magnetometer for detecting subsurface ferrous anomalies",
+        "category": "payloads"
+      },
+      {
+        "src": "/real-images/RGB PAYLOAD.webp",
+        "alt": "RGB camera payload for high-resolution visual documentation",
+        "caption": "RGB Camera Payload",
+        "description": "High-resolution camera system for surface documentation and inspection",
+        "category": "payloads"
+      },
+      {
+        "src": "/real-images/software screenshot.webp",
+        "alt": "StrataIntel field data processing and analysis software interface",
+        "caption": "Field Data Processing Software",
+        "description": "Proprietary software for processing, analyzing, and delivering field intelligence data",
+        "category": "software"
+      }
+    ]
   }
 }
