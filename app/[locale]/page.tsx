@@ -34,7 +34,9 @@ export default async function Home({ params }: PageProps) {
       <PackagedCapabilities />
       <OperationalNote />
       <ServicesTeaser />
-      <BookACall />
+      <div className="border-t border-zinc-800 bg-zinc-900/20">
+        <BookACall />
+      </div>
       <Footer />
     </main>
   );

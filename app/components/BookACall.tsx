@@ -6,8 +6,8 @@ export default async function BookACall() {
   const t = await getTranslations("bookCall");
 
   return (
-    <section id="book-a-call" className="border-t border-zinc-800 bg-zinc-900/20">
-      <div className="max-w-4xl mx-auto px-6 py-24 text-center">
+    <section id="book-a-call" className="w-full">
+      <div className="max-w-4xl mx-auto px-6 py-12 text-center">
         <div className="reveal-on-scroll">
           <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-mono uppercase tracking-widest mb-6">
             <CalendarDays size={14} />

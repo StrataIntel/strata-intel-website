@@ -67,7 +67,7 @@ export default async function Contact({ params }: PageProps) {
   return (
     <main className="bg-zinc-950 min-h-screen flex flex-col">
       <Nav />
-      <div className="pt-16 flex-1">
+      <div className="pt-16 flex-1 flex items-center justify-center">
         <BookACall />
       </div>
       <Footer />
