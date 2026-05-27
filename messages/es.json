@@ -81,6 +81,11 @@
     ]
   },
   "flagship": {
+    "metadata": {
+      "title": "StrataIntel | Magnetometría Aérea",
+      "description": "Magnetometría aérea para detección de infraestructura enterrada. Identifique tuberías enterradas, residuos metálicos y activos subsuperficiales no documentados antes de excavación o construcción.",
+      "keywords": "magnetometría aérea, detección tuberías enterradas, detección subsuperficial, detección anomalías magnéticas, detección ferromagnética, infraestructura enterrada, magnetometría petrolera"
+    },
     "title": "Capacidad insignia: magnetometría aérea para detección de infraestructura enterrada",
     "description": "La magnetometría aérea utiliza un magnetómetro de alta sensibilidad montado en una plataforma industrial de dron para medir variaciones en el campo magnético de la Tierra. Estas variaciones pueden revelar la presencia de objetos ferromagnéticos enterrados, como tuberías, chatarra metálica, infraestructura abandonada, remanentes de casing y otros activos subterráneos no documentados.",
     "detectTitle": "Qué ayuda a detectar",
@@ -102,6 +107,11 @@
     ]
   },
   "useCases": {
+    "metadata": {
+      "title": "StrataIntel | Casos de Uso",
+      "description": "Casos de uso de inteligencia industrial de campo para operaciones de petróleo y gas: evaluación de riesgo pre-excavación, expansión de pads, verificación de tuberías y movilización de contratistas.",
+      "keywords": "evaluación pre-excavación, expansión de pads, verificación de tuberías, detección infraestructura abandonada, inteligencia para contratistas, evaluación riesgo de campo"
+    },
     "title": "Casos de uso",
     "subtitle": "Diseñado para decisiones de campo de alta consecuencia.",
     "cases": [
@@ -161,6 +171,11 @@
     ]
   },
   "dataCustody": {
+    "metadata": {
+      "title": "StrataIntel | Custodia de Datos",
+      "description": "Flujo estructurado de custodia de datos de campo desde la configuración del proyecto hasta la ejecución de la misión, almacenamiento de datos crudos, procesamiento y entregables operativos.",
+      "keywords": "custodia de datos, flujo de datos de campo, seguridad de datos, gestión de datos de proyecto, control de datos de misión, custodia estructurada de datos"
+    },
     "title": "Custodia de datos",
     "subtitle": "Los datos de campo requieren estructura, custodia y control.",
     "description": "Los datos industriales de campo son sensibles. StrataIntel se está diseñando alrededor de un flujo interno estructurado que controla cómo la información del proyecto se mueve desde la adquisición en campo hasta el procesamiento y la entrega final.",
@@ -193,6 +208,11 @@
     ]
   },
   "capabilities": {
+    "metadata": {
+      "title": "StrataIntel | Capacidades",
+      "description": "Capacidades integradas de inteligencia de campo: magnetometría aérea, modelado LiDAR, detección de metano, inspección térmica y fotogrametría para operaciones industriales.",
+      "keywords": "capacidades inteligencia de campo, magnetometría aérea, modelado LIDAR, detección metano, inspección térmica, fotogrametría industrial, servicios drones integrados"
+    },
     "title": "Capacidades integradas",
     "subtitle": "Inteligencia de campo integrada, construida alrededor de la misión.",
     "description": "La magnetometría aérea es la capacidad insignia, pero muchas decisiones en campo requieren más de una capa de datos. Según las necesidades del proyecto, StrataIntel puede combinar magnetometría con sensores adicionales y métodos de adquisición de datos para respaldar una planificación operativa más amplia.",
@@ -264,6 +284,11 @@
     "tagline": "Inteligencia Industrial de Campo · Magnetometría Aérea · Custodia de Datos"
   },
   "bookCall": {
+    "metadata": {
+      "title": "StrataIntel | Contacto",
+      "description": "Contacte a StrataIntel para discutir sus operaciones de campo y agendar una conversación técnica sobre magnetometría aérea y soluciones de inteligencia de campo.",
+      "keywords": "contacto strataintel, agendar consulta, agendar llamada técnica, consulta inteligencia de campo, consulta magnetometría"
+    },
     "eyebrow": "Agenda",
     "title": "¿Listo para hablar?",
     "description": "Agenda una llamada de 30 minutos para hablar sobre tus operaciones de campo y cómo StrataIntel puede ayudarte a reducir la incertidumbre antes de tu próxima intervención.",

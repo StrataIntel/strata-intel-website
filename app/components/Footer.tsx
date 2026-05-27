@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { MessageCircle } from "lucide-react";
 
 export default async function Footer() {
   const t = await getTranslations("footer");
@@ -28,12 +29,25 @@ export default async function Footer() {
             <p className="text-xs text-zinc-300 font-mono text-center sm:text-right">
               {t("tagline")}
             </p>
-            <a
-              href="mailto:info@strataintel.net"
-              className="text-xs text-zinc-200 hover:text-amber-400 font-mono transition-colors duration-200"
-            >
-              info@strataintel.net
-            </a>
+            <div className="flex items-center gap-3">
+              <a
+                href="mailto:info@strataintel.net"
+                className="text-xs text-zinc-200 hover:text-amber-400 font-mono transition-colors duration-200"
+              >
+                info@strataintel.net
+              </a>
+              <span className="text-zinc-700">·</span>
+              <a
+                href="https://wa.me/584127543948"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-xs text-zinc-200 hover:text-green-400 font-mono transition-colors duration-200"
+                aria-label="Contact via WhatsApp"
+              >
+                <MessageCircle size={13} />
+                <span>+58 412-7543948</span>
+              </a>
+            </div>
           </div>
         </div>
       </footer>

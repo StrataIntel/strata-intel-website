@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, MessageCircle } from "lucide-react";
 import { CALENDAR_URL } from "./BookCallButton";
 
 export default async function BookACall() {
@@ -28,6 +28,19 @@ export default async function BookACall() {
             {t("buttonLabel")}
             <CalendarDays size={15} />
           </a>
+          <div className="mt-6 flex items-center justify-center gap-2 text-zinc-500">
+            <span className="text-xs">or reach us via</span>
+            <a
+              href="https://wa.me/584127543948"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs text-zinc-400 hover:text-green-400 transition-colors duration-200"
+              aria-label="Contact via WhatsApp"
+            >
+              <MessageCircle size={14} />
+              <span className="font-mono">WhatsApp</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
