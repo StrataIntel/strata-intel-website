@@ -8,6 +8,7 @@
     "links": ["Magnetometry", "Use Cases", "Data Custody", "Capabilities", "Contact"],
     "servicesLink": "Services",
     "technologyLink": "Technology",
+    "resourcesLink": "Resources",
     "bookCallLabel": "Book a Call",
     "toggleMenu": "Toggle menu",
     "languageSelector": "Select language"
@@ -398,12 +399,54 @@
       "cta": "View Service Documents"
     }
   },
+  "resources": {
+    "metadata": {
+      "title": "StrataIntel | Resources",
+      "description": "Field intelligence articles, operational insights, and practical guidance for reducing uncertainty before excavation, intervention, and construction work.",
+      "keywords": "field intelligence resources, oilfield blog, excavation risk insights, mature oilfield uncertainty, aerial magnetometry articles"
+    },
+    "eyebrow": "Resources",
+    "title": "Operational insight for teams working before the first shovel hits the ground.",
+    "description": "A growing library of field intelligence articles built for operators, EPC teams, contractors, and maintenance leaders who need better site visibility before work starts.",
+    "introCardLabel": "Why this section exists",
+    "introCardBody": "We use this library to explain the operational problems behind buried infrastructure risk, field uncertainty, and the data workflows that help teams plan with more confidence.",
+    "articleCountLabel": "{count, plural, one {# published resource} other {# published resources}}",
+    "featuredLabel": "Featured resource",
+    "featuredTitle": "Start with the latest field perspective.",
+    "libraryLabel": "Resource library",
+    "libraryTitle": "Read, share, and use these articles in planning conversations.",
+    "libraryDescription": "Every article is written to help commercial, operational, and technical teams align around the same field reality before excavation, intervention, or mobilization begins.",
+    "readArticleCta": "Read article",
+    "cardCta": "Open resource",
+    "readingTimeLabel": "{minutes} min read",
+    "backToResources": "Back to resources",
+    "closingCta": {
+      "eyebrow": "Need to evaluate a real site?",
+      "title": "Bring the field context into the conversation earlier.",
+      "description": "If your team is planning excavation, intervention, or contractor mobilization in a complex oilfield environment, StrataIntel can help evaluate whether aerial magnetometry or a broader field intelligence package fits the decision in front of you.",
+      "button": "Talk to StrataIntel"
+    },
+    "teaser": {
+      "eyebrow": "Resources",
+      "title": "Field intelligence articles for teams working in mature oilfields.",
+      "description": "Read practical pieces on buried infrastructure risk, field uncertainty, and the data workflows that improve decisions before work starts.",
+      "cta": "Browse resources",
+      "featuredCta": "Read featured article",
+      "sidebarLabel": "Built for real field decisions",
+      "sidebarDescription": "These resources are written for operators, EPC teams, contractors, and maintenance leaders who need to align planning with site reality before execution begins.",
+      "firstArticleLabel": "First published article"
+    }
+  },
   "footer": {
     "title": "Have a field area with operational uncertainty?",
     "description": "If your team is planning excavation, construction, maintenance, field rehabilitation, well pad expansion, inspection, or contractor mobilization in a complex oilfield environment, StrataIntel can help evaluate whether aerial magnetometry or a packaged field intelligence solution is the right approach.",
     "primaryCta": "Request a Technical Conversation",
     "secondaryCta": "Send a Pilot Area for Review",
     "bookCta": "Book a Call",
+    "exploreLabel": "Explore",
+    "resourcesLink": "Resources",
+    "servicesLink": "Services",
+    "contactLink": "Contact",
     "copyright": "© 2026 StrataIntel. All rights reserved.",
     "tagline": "Industrial Field Intelligence · Aerial Magnetometry · Data Custody"
   },

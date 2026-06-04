@@ -9,6 +9,7 @@ import OperatingEnvironment from "@/app/components/OperatingEnvironment";
 import DataCustody from "@/app/components/DataCustody";
 import PackagedCapabilities from "@/app/components/PackagedCapabilities";
 import OperationalNote from "@/app/components/OperationalNote";
+import ResourcesTeaser from "@/app/components/ResourcesTeaser";
 import ServicesTeaser from "@/app/components/ServicesTeaser";
 import BookACall from "@/app/components/BookACall";
 import Footer from "@/app/components/Footer";
@@ -34,6 +35,7 @@ export default async function Home({ params }: PageProps) {
       <PackagedCapabilities />
       <OperationalNote />
       <ServicesTeaser />
+      <ResourcesTeaser locale={locale} />
       <div className="border-t border-zinc-800 bg-zinc-900/20">
         <BookACall />
       </div>

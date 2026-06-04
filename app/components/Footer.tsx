@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 
 export default async function Footer() {
   const t = await getTranslations("footer");
@@ -28,6 +29,31 @@ export default async function Footer() {
             <p className="text-xs text-zinc-300 font-mono text-center sm:text-right">
               {t("tagline")}
             </p>
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-end">
+              <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-zinc-600">
+                {t("exploreLabel")}
+              </span>
+              <Link
+                href="/resources"
+                className="text-xs text-zinc-200 hover:text-amber-400 font-mono transition-colors duration-200"
+              >
+                {t("resourcesLink")}
+              </Link>
+              <span className="text-zinc-700">·</span>
+              <Link
+                href="/services"
+                className="text-xs text-zinc-200 hover:text-amber-400 font-mono transition-colors duration-200"
+              >
+                {t("servicesLink")}
+              </Link>
+              <span className="text-zinc-700">·</span>
+              <Link
+                href="/contact"
+                className="text-xs text-zinc-200 hover:text-amber-400 font-mono transition-colors duration-200"
+              >
+                {t("contactLink")}
+              </Link>
+            </div>
             <div className="flex items-center gap-3">
               <a
                 href="mailto:info@strataintel.net"

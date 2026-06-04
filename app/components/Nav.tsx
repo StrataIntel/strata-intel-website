@@ -138,6 +138,14 @@ export default function Nav() {
           </li>
           <li>
             <Link
+              href="/resources"
+              className="text-sm text-zinc-400 hover:text-zinc-100 transition-colors duration-200 whitespace-nowrap"
+            >
+              {t("resourcesLink")}
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/data-custody"
               className="text-sm text-zinc-400 hover:text-zinc-100 transition-colors duration-200 whitespace-nowrap"
             >
@@ -292,6 +300,15 @@ export default function Nav() {
                   className="block text-zinc-300 hover:text-zinc-100 text-sm py-1 transition-colors"
                 >
                   {t("technologyLink")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/resources"
+                  onClick={() => setOpen(false)}
+                  className="block text-zinc-300 hover:text-zinc-100 text-sm py-1 transition-colors"
+                >
+                  {t("resourcesLink")}
                 </Link>
               </li>
               <li>

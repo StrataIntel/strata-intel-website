@@ -8,6 +8,7 @@
     "links": ["Magnetometría", "Casos de Uso", "Custodia de Datos", "Capacidades", "Contacto"],
     "servicesLink": "Servicios",
     "technologyLink": "Tecnología",
+    "resourcesLink": "Recursos",
     "bookCallLabel": "Agendar una llamada",
     "toggleMenu": "Abrir o cerrar menú",
     "languageSelector": "Seleccionar idioma"
@@ -398,12 +399,54 @@
       "cta": "Ver Documentos de Servicios"
     }
   },
+  "resources": {
+    "metadata": {
+      "title": "StrataIntel | Recursos",
+      "description": "Artículos de inteligencia de campo, perspectivas operativas y guía práctica para reducir incertidumbre antes de excavaciones, intervenciones y trabajos de construcción.",
+      "keywords": "recursos de inteligencia de campo, blog petrolero, riesgos de excavación, incertidumbre en campos maduros, artículos de magnetometría aérea"
+    },
+    "eyebrow": "Recursos",
+    "title": "Perspectiva operativa para equipos que necesitan claridad antes de mover la primera excavadora.",
+    "description": "Una biblioteca en crecimiento de artículos de inteligencia de campo para operadores, EPCs, contratistas y líderes de mantenimiento que necesitan mejor visibilidad del sitio antes de ejecutar.",
+    "introCardLabel": "Por qué existe esta sección",
+    "introCardBody": "Usamos esta biblioteca para explicar los problemas operativos detrás del riesgo por infraestructura enterrada, la incertidumbre en campo y los flujos de data que ayudan a planificar con más confianza.",
+    "articleCountLabel": "{count, plural, one {# recurso publicado} other {# recursos publicados}}",
+    "featuredLabel": "Recurso destacado",
+    "featuredTitle": "Empieza por la perspectiva más reciente desde campo.",
+    "libraryLabel": "Biblioteca de recursos",
+    "libraryTitle": "Lee, comparte y usa estos artículos en conversaciones de planificación.",
+    "libraryDescription": "Cada artículo está escrito para ayudar a equipos comerciales, operativos y técnicos a alinearse alrededor de la misma realidad de campo antes de excavaciones, intervenciones o movilizaciones.",
+    "readArticleCta": "Leer artículo",
+    "cardCta": "Abrir recurso",
+    "readingTimeLabel": "{minutes} min de lectura",
+    "backToResources": "Volver a recursos",
+    "closingCta": {
+      "eyebrow": "¿Necesitas evaluar un sitio real?",
+      "title": "Lleva el contexto del campo a la conversación antes de ejecutar.",
+      "description": "Si tu equipo está planificando una excavación, intervención o movilización de contratistas en un entorno petrolero complejo, StrataIntel puede ayudar a evaluar si la magnetometría aérea o un paquete más amplio de inteligencia de campo encaja con la decisión que tienes delante.",
+      "button": "Hablar con StrataIntel"
+    },
+    "teaser": {
+      "eyebrow": "Recursos",
+      "title": "Artículos de inteligencia de campo para equipos que trabajan en campos maduros.",
+      "description": "Lee piezas prácticas sobre riesgo por infraestructura enterrada, incertidumbre en campo y los flujos de data que mejoran decisiones antes de empezar a ejecutar.",
+      "cta": "Explorar recursos",
+      "featuredCta": "Leer artículo destacado",
+      "sidebarLabel": "Pensado para decisiones reales",
+      "sidebarDescription": "Estos recursos están escritos para operadores, EPCs, contratistas y líderes de mantenimiento que necesitan alinear la planificación con la realidad del sitio antes de la ejecución.",
+      "firstArticleLabel": "Primer artículo publicado"
+    }
+  },
   "footer": {
     "title": "¿Tienes un área de campo con incertidumbre operativa?",
     "description": "Si tu equipo está planificando excavación, construcción, mantenimiento, rehabilitación de campo, expansión de pads, inspección o movilización de contratistas en un entorno petrolero complejo, StrataIntel puede ayudar a evaluar si la magnetometría aérea o una solución integrada de inteligencia de campo es el enfoque adecuado.",
     "primaryCta": "Solicitar una conversación técnica",
     "secondaryCta": "Enviar un área piloto para revisión",
     "bookCta": "Agendar una llamada",
+    "exploreLabel": "Explora",
+    "resourcesLink": "Recursos",
+    "servicesLink": "Servicios",
+    "contactLink": "Contacto",
     "copyright": "© 2026 StrataIntel. Todos los derechos reservados.",
     "tagline": "Inteligencia Industrial de Campo · Magnetometría Aérea · Custodia de Datos"
   },
