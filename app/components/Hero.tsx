@@ -28,6 +28,10 @@ export default async function Hero() {
           {t("title")}
         </h1>
 
+        <p className="hero-enter hero-enter-delay-2 mb-5 w-full max-w-2xl text-balance text-sm leading-relaxed text-amber-400/90 sm:text-base">
+          {t("experience")}
+        </p>
+
         <p className="hero-enter hero-enter-delay-2 w-full max-w-2xl text-pretty text-base leading-relaxed text-zinc-400 sm:text-lg mb-10">
           {t("description")}
         </p>
