@@ -79,10 +79,10 @@ export async function generateMetadata({
       description: messages.metadata.description,
       images: [
         {
-          url: "/og-image.png",
-          width: 1200,
-          height: 630,
-          alt: messages.metadata.title,
+          url: "/carousel/Mission_Carrousel.png",
+          width: 1672,
+          height: 941,
+          alt: "StrataIntel field intelligence mission map and drone survey flight plan",
         },
       ],
     },
@@ -90,7 +90,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: messages.metadata.title,
       description: messages.metadata.description,
-      images: ["/og-image.png"],
+      images: ["/carousel/Mission_Carrousel.png"],
     },
   };
 }
